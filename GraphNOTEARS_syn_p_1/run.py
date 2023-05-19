@@ -12,7 +12,7 @@ import lasso
 import dynotears
 import utils as ut
 
-device = torch.device("cuda:0")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 def data_pre(n, d, s0, w_graph_type, p_graph_type, sem_type):
@@ -44,12 +44,12 @@ def main():
     import utils as ut
     # ut.set_random_seed(123)
 
-    n_ = [100, 200, 300, 500]
+    n_ = [20] # [100, 200, 300, 500]
 
-    d_ = [5, 10, 20, 30]
+    d_ = [5] #[5, 10, 20, 30]
 
-    w_graph_types = ['ER', 'BA'] 
-    p_graph_types = ['ER', 'SBM'] 
+    w_graph_types = ['ER']#['ER', 'BA'] 
+    p_graph_types = ['ER']#['ER', 'SBM'] 
     sem_types = ['exp']
 
 
@@ -138,7 +138,8 @@ def main():
                                     w_shd[i].append(shd)
                                     w_nnz[i].append(pred_size)
 
-                                    acc = ' fdr = ' + str(fdr) + ' tpr = ' + str(tpr) + ' fpr = ' + str(fpr) + ' shd = ' + str(shd) + ' nnz = ' + str(pred_size)
+                                    # acc = ' fdr = ' + str(fdr) + ' tpr = ' + str(tpr) + ' fpr = ' + str(fpr) + ' shd = ' + str(shd) + ' nnz = ' + str(pred_size)
+                                    acc = " fdr = {:.2f} tpr = {:.2f} fpr = {:.2f} shd = {:.2f} nnz = {:d}".format(fdr, tpr, fpr, shd, pred_size)
                                     string = "W_est: threshold = " + str(thre) + str(acc) +  "  f1 = " + str(w_f1_)  + "\n"
                                     print(string)
                                     with open(re_file, 'a') as result_file:
@@ -159,7 +160,9 @@ def main():
                                     p1_shd[i].append(shd)
                                     p1_nnz[i].append(pred_size)
 
-                                    acc = ' fdr = ' + str(fdr) + ' tpr = ' + str(tpr) + ' fpr = ' + str(fpr) + ' shd = ' + str(shd) + ' nnz = ' + str(pred_size)
+                                    # acc = ' fdr = ' + str(fdr) + ' tpr = ' + str(tpr) + ' fpr = ' + str(fpr) + ' shd = ' + str(shd) + ' nnz = ' + str(pred_size)
+                                    acc = " fdr = {:.2f} tpr = {:.2f} fpr = {:.2f} shd = {:.2f} nnz = {:d}".format(fdr, tpr, fpr, shd, pred_size)
+
                                     string = "P1_est: threshold = " + str(thre) + " acc = " + str(acc) + "  f1 = " + str(p1_f1_) +"\n"
                                     print(string)
                                     with open(re_file, 'a') as result_file:
