@@ -1,1 +1,6 @@
  n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp

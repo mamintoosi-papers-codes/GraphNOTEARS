@@ -7,7 +7,9 @@ import torch.nn as nn
 import numpy as np
 import utils as ut
 import scipy.sparse
-device = torch.device("cuda:1")
+
+# device = torch.device("cuda:0")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 class model_p1_MLP(nn.Module):
     def __init__(self, dims, bias=True):

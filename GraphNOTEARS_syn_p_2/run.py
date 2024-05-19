@@ -12,7 +12,8 @@ import lasso
 import dynotears_p2
 import utils as ut
 
-device = torch.device("cuda:1")
+# device = torch.device("cuda:0")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def data_pre(n, d, s0, w_graph_type, p_graph_type, sem_type):
     w_true = ut.simulate_dag(d, s0, w_graph_type)

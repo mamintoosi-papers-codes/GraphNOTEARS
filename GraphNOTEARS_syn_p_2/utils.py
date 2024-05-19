@@ -5,7 +5,9 @@ import torch
 import numpy as np
 import scipy.sparse
 import scipy.sparse as sp
-device = torch.device("cuda:0")
+
+# device = torch.device("cuda:0")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def set_random_seed(seed):
     random.seed(seed)
