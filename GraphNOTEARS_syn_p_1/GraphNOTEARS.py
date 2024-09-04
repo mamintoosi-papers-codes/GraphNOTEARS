@@ -53,7 +53,7 @@ def dual_ascent_step(model, X_lags, adj1, lambda1, lambda2, lambda3, rho, alpha,
     primal = torch.Tensor([0.0]).float().cuda()
     while rho < rho_max:
         def closure():
-            print("rho < rho_max:", rho, rho_max)
+            # print("rho < rho_max:", rho, rho_max)
             optimizer.zero_grad()
             X_hat = model(X_lags, adj1)
             loss = squared_loss(X_hat, X_lags[1:])
@@ -61,7 +61,7 @@ def dual_ascent_step(model, X_lags, adj1, lambda1, lambda2, lambda3, rho, alpha,
             diag_loss = model.diag_zero()
             penalty1 = 0.5 * rho * h_val * h_val + alpha * h_val
             primal_obj = primal + loss + 100 * penalty1 + 1000 * diag_loss +  lambda1 * L1Norm(model.w_est) + lambda2 * L1Norm(model.p1_est) #+ lambda3 * L1Norm(model.p2_est) # l2_reg + l1_reg
-            print("h", h)
+            # print("h", h)
             primal_obj.backward()
             return primal_obj
 

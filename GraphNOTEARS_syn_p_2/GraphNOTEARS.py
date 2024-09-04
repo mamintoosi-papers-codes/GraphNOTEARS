@@ -54,7 +54,7 @@ def dual_ascent_step(model, X_torch, adj1, adj2, lambda1, lambda2, lambda3, rho,
     primal = torch.Tensor([0.0]).float().to(device)
     while rho < rho_max:
         def closure():
-            print("rho < rho_max:", rho, rho_max)
+            # print("rho < rho_max:", rho, rho_max)
             optimizer.zero_grad()
             X_hat = model(X_torch, adj1, adj2)
             loss = squared_loss(X_hat, X_torch[2:])
