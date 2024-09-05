@@ -44,9 +44,9 @@ def main():
     import utils as ut
     # ut.set_random_seed(123)
 
-    n_ = [20] # [100, 200, 300, 500]
+    n_ = [500] # [100, 200, 300, 500]
 
-    d_ = [5] #[5, 10, 20, 30]
+    d_ = [3] #[5, 10, 20, 30]
 
     w_graph_types = ['BA']#['ER', 'BA'] 
     p_graph_types = ['SBM']#['ER', 'SBM'] 
@@ -54,6 +54,9 @@ def main():
 
 
     re_file = "result/p_1_results.txt"
+    # Open the file in write mode to clear its contents
+    with open(re_file, 'w') as result_file:
+        pass  # This will create an empty file
 
     for n in n_:
         for d in d_:
@@ -90,30 +93,30 @@ def main():
                             model_1 = GraphNOTEARS.model_p1_MLP(dims=[d, n, 1], bias=True)
                             model_1.to(device)
                             W_est_1, P1_est_1 = GraphNOTEARS.linear_model(model_1, Xlags_torch, adj1_torch,  lambda1 = 0.01, lambda2 = 0.01, lambda3 = 0.01)
-                            model_notears = notears_torch_version.NotearsMLP(dims=[d, n, 1], bias=True)
-                            model_notears.to(device)
-                            W_est_2 = notears_torch_version.notears_nonlinear(model_notears, Xlags_torch[1:], lambda1=0.01, lambda2=0.01)
+                            # model_notears = notears_torch_version.NotearsMLP(dims=[d, n, 1], bias=True)
+                            # model_notears.to(device)
+                            # W_est_2 = notears_torch_version.notears_nonlinear(model_notears, Xlags_torch[1:], lambda1=0.01, lambda2=0.01)
 
-                            model_lasso = lasso.lasso_MLP(dims=[d, n, 1], bias=True)
-                            model_lasso.to(device)
-                            P1_est_2 = lasso.lasso_model(model_lasso, Xlags_torch, adj1_torch, lambda1=0.01, lambda2=0.01)
+                            # model_lasso = lasso.lasso_MLP(dims=[d, n, 1], bias=True)
+                            # model_lasso.to(device)
+                            # P1_est_2 = lasso.lasso_model(model_lasso, Xlags_torch, adj1_torch, lambda1=0.01, lambda2=0.01)
 
-                            # run dynotears
-                            model_dynotears = dynotears.dynotears_MLP(dims=[d, n, 1], bias=True)
-                            model_dynotears.to(device)
-                            W_est_3, P1_est_3 = dynotears.dynotears_model(model_dynotears, Xlags_torch, adj1_torch, lambda1 = 0.01, lambda2 = 0.01, lambda3 = 0.01)
+                            # # run dynotears
+                            # model_dynotears = dynotears.dynotears_MLP(dims=[d, n, 1], bias=True)
+                            # model_dynotears.to(device)
+                            # W_est_3, P1_est_3 = dynotears.dynotears_model(model_dynotears, Xlags_torch, adj1_torch, lambda1 = 0.01, lambda2 = 0.01, lambda3 = 0.01)
 
-                            w_est = [W_est_1, W_est_2, W_est_3] #
-                            p1_est = [P1_est_1, P1_est_2, P1_est_3] #
+                            w_est = [W_est_1]#, W_est_2, W_est_3] #
+                            p1_est = [P1_est_1]#, P1_est_2, P1_est_3] #
 
 
                             threshold = [0.3]
 
-                            for i in range(3):
+                            for i in range(1):
                                 with open(re_file, 'a') as result_file:
                                     if i == 0:
-                                        print("-----model_p2-----")
-                                        result_file.write("-----model_p2-----"+"\n")
+                                        print("-----model_p1-----")
+                                        result_file.write("-----model_p1-----"+"\n")
                                     if i == 1:
                                         print("-----notears + lasso-----")
                                         result_file.write("-----notears + lasso-----"+"\n")
@@ -140,7 +143,7 @@ def main():
 
                                     # acc = ' fdr = ' + str(fdr) + ' tpr = ' + str(tpr) + ' fpr = ' + str(fpr) + ' shd = ' + str(shd) + ' nnz = ' + str(pred_size)
                                     acc = " fdr = {:.2f} tpr = {:.2f} fpr = {:.2f} shd = {:.2f} nnz = {:d}".format(fdr, tpr, fpr, shd, pred_size)
-                                    string = "W_est: threshold = " + str(thre) + str(acc) +  "  f1 = " + str(w_f1_)  + "\n"
+                                    string = "W_est: threshold = " + str(thre) + acc +  "  f1 = {:.2f}".format(w_f1_)  + "\n"
                                     print(string)
                                     with open(re_file, 'a') as result_file:
                                         result_file.write(string)
@@ -163,7 +166,7 @@ def main():
                                     # acc = ' fdr = ' + str(fdr) + ' tpr = ' + str(tpr) + ' fpr = ' + str(fpr) + ' shd = ' + str(shd) + ' nnz = ' + str(pred_size)
                                     acc = " fdr = {:.2f} tpr = {:.2f} fpr = {:.2f} shd = {:.2f} nnz = {:d}".format(fdr, tpr, fpr, shd, pred_size)
 
-                                    string = "P1_est: threshold = " + str(thre) + " acc = " + str(acc) + "  f1 = " + str(p1_f1_) +"\n"
+                                    string = "P1_est: threshold = " + str(thre) + acc + "  f1 = {:.2f}".format(p1_f1_) +"\n"
                                     print(string)
                                     with open(re_file, 'a') as result_file:
                                         result_file.write(string)
@@ -174,36 +177,36 @@ def main():
                             result_file.write("\n")
                             result_file.write("mean and var for each model with " + ' n = ' +str(n) + ' d = ' +str(d) + ' w_graph_type = ' + w_graph_type + ' p_graph_type = ' + p_graph_type + ' sem_type = ' + sem_type + "\n")
                             result_file.write("\n")
-                        for i in range(3):
+                        for i in range(1):
                             if i == 0:
                                 model_name = "model_1: "
                             if i == 1:
                                 model_name = "notears + lasso: "
                             if i == 2:
                                 model_name = "dynotears: "
-                            string = model_name + " w_fdr mean = " + str(np.mean(w_fdr[i])) + " w_fdr var = " + str(np.var(w_fdr[i])) +  \
-                                     " | w_tpr mean = " + str(np.mean(w_tpr[i])) + " w_tpr var = " + str(np.var(w_tpr[i])) + \
-                                    " | w_fpr mean = " + str(np.mean(w_fpr[i])) + " w_fpr var = " + str(np.var(w_fpr[i])) + \
-                                    " | w_f1 mean = " + str(np.mean(w_f1[i])) + " w_f1 var = " + str(np.var(w_f1[i])) + \
-                                     " | w_shd mean = " + str(np.mean(w_shd[i])) + " w_shd var = " + str(np.var(w_shd[i])) + "\n"
+                            string = model_name + " w_fdr mean = {:.2f} ".format(np.mean(w_fdr[i])) + " w_fdr var = {:.2f}".format(np.var(w_fdr[i])) +  \
+                                     " | w_tpr mean = {:.2f}".format(np.mean(w_tpr[i])) + " w_tpr var = {:.2f}".format(np.var(w_tpr[i])) + \
+                                    " | w_fpr mean = {:.2f}".format(np.mean(w_fpr[i])) + " w_fpr var = {:.2f}".format(np.var(w_fpr[i])) + \
+                                    " | w_f1 mean = {:.2f}".format(np.mean(w_f1[i])) + " w_f1 var = {:.2f}".format(np.var(w_f1[i])) + \
+                                     " | w_shd mean = {:.2f}".format(np.mean(w_shd[i])) + " w_shd var = {:.2f}".format(np.var(w_shd[i])) + "\n"
 
                             with open(re_file, 'a') as result_file:
                                 result_file.write(string)
                                 result_file.write("\n")
 
                         print('p1_mat=', p1_mat)
-                        for i in range(3):
+                        for i in range(1):
                             if i == 0:
                                 model_name = "model_1"
                             if i == 1:
                                 model_name = "notears + lasso"
                             if i == 2:
                                 model_name = "dynotears"
-                            string = model_name + " p1_fdr mean = " + str(np.mean(p1_fdr[i])) + " p1_fdr var = " + str(np.var(p1_fdr[i])) +  \
-                                     " | p1_tpr mean = " + str(np.mean(p1_tpr[i])) + " p1_tpr var = " + str(np.var(p1_tpr[i])) + \
-                                    " | p1_fpr mean = " + str(np.mean(p1_fpr[i])) + " p1_fpr var = " + str(np.var(p1_fpr[i])) + \
-                                    " | p1_f1 mean = " + str(np.mean(p1_f1[i])) + " p1_f1 var = " + str(np.var(p1_f1[i])) + \
-                                    " | p1_shd mean = " + str(np.mean(p1_shd[i])) + " p1_shd var = " + str(np.var(p1_shd[i])) + "\n"
+                            string = model_name + " p1_fdr mean = {:.2f}".format(np.mean(p1_fdr[i])) + " p1_fdr var = {:.2f}".format(np.var(p1_fdr[i])) +  \
+                                     " | p1_tpr mean = {:.2f}".format(np.mean(p1_tpr[i])) + " p1_tpr var = {:.2f}".format(np.var(p1_tpr[i])) + \
+                                    " | p1_fpr mean = {:.2f}".format(np.mean(p1_fpr[i])) + " p1_fpr var = {:.2f}".format(np.var(p1_fpr[i])) + \
+                                    " | p1_f1 mean = {:.2f}".format(np.mean(p1_f1[i])) + " p1_f1 var = {:.2f}".format(np.var(p1_f1[i])) + \
+                                    " | p1_shd mean = {:.2f}".format(np.mean(p1_shd[i])) + " p1_shd var = {:.2f}".format(np.var(p1_shd[i])) + "\n"
                             with open(re_file, 'a') as result_file:
                                 result_file.write(string)
                                 result_file.write("\n")

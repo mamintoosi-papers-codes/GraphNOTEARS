@@ -1,0 +1,25 @@
+This function calculates various accuracy metrics for a predicted matrix (`B_est`) against its ground truth (`B_true`). Here's a breakdown of each returned measure:
+
+1. **FDR (False Discovery Rate)**: This measures the proportion of false positives among all predicted edges. It's calculated as `(reverse + false positive) / prediction positive`. In other words, it's the ratio of incorrect predictions to the total number of predictions.
+
+   * `reverse`: The number of edges that are predicted to be in the opposite direction of the true edge.
+   * `false positive`: The number of edges that are predicted to exist but do not exist in the true graph.
+   * `prediction positive`: The total number of edges predicted to exist.
+
+2. **TPR (True Positive Rate)**: This measures the proportion of true positives among all actual positive edges. It's calculated as `(true positive) / condition positive`. In other words, it's the ratio of correct predictions to the total number of actual positive edges.
+
+   * `true positive`: The number of edges that are correctly predicted to exist and have the correct direction.
+   * `condition positive`: The total number of actual positive edges in the true graph.
+
+3. **FPR (False Positive Rate)**: This measures the proportion of false positives among all actual negative edges. It's calculated as `(reverse + false positive) / condition negative`. In other words, it's the ratio of incorrect predictions to the total number of actual negative edges.
+
+   * `condition negative`: The total number of actual negative edges in the true graph.
+
+4. **SHD (Structural Hamming Distance)**: This measures the difference between the predicted graph and the true graph. It's calculated as the sum of three components:
+   * `extra`: The number of edges that are predicted to exist but do not exist in the true graph.
+   * `missing`: The number of edges that exist in the true graph but are not predicted to exist.
+   * `reverse`: The number of edges that are predicted to exist but have the opposite direction in the true graph.
+
+5. **NNZ (Number of Non-Zero elements)**: This measures the total number of predicted edges. It's calculated as the sum of the number of predicted positive edges and the number of predicted negative edges.
+
+These metrics provide a comprehensive evaluation of the accuracy of the predicted graph. The FDR and FPR metrics evaluate the accuracy of the predicted edges, while the TPR metric evaluates the accuracy of the predicted positive edges. The SHD metric provides a more detailed evaluation of the differences between the predicted graph and the true graph.
