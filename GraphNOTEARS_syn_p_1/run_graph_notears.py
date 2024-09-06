@@ -43,178 +43,100 @@ def main():
 
     import utils as ut
     # ut.set_random_seed(123)
+    import pandas as pd  
 
-    n_ = [500] # [100, 200, 300, 500]
+    # Define the columns for the DataFrame  
+    columns = ['n', 'd', 'w_graph_type', 'p_graph_type', 'sem_type',   
+                'model', 'run_no', 'threshold', 'metric', 'value']  
 
-    d_ = [3] #[5, 10, 20, 30]
+    # Initialize an empty list to store the results  
+    results = []  
 
-    w_graph_types = ['BA']#['ER', 'BA'] 
-    p_graph_types = ['SBM']#['ER', 'SBM'] 
-    sem_types = ['exp']
+    n_ = [100, 200, 300]#, 500]
 
+    d_ = [10, 20, 30]
 
-    re_file = "result/p_1_results.txt"
+    w_graph_types = ['ER']#, 'BA'] 
+    p_graph_types = ['ER', 'SBM'] 
+    sem_types = [ 'gauss'] #'exp',
+    models = ['W', 'WP']
+
+    # re_file = f"result/results-{w_graph_types[0]}-{p_graph_types[0]}-{sem_types[0]}-{n_[0]}-{d_[0]}.txt"
     # Open the file in write mode to clear its contents
-    with open(re_file, 'w') as result_file:
-        pass  # This will create an empty file
+    # with open(re_file, 'w') as result_file:
+    #     pass  # This will create an empty file
 
     for n in n_:
         for d in d_:
             for w_graph_type in w_graph_types:
                 for p_graph_type in p_graph_types:
                     for sem_type in sem_types:
-                        w_fdr = [[],[],[]]
-                        w_tpr = [[],[],[]]
-                        w_fpr = [[],[],[]]
-                        w_shd = [[],[],[]]
-                        w_nnz = [[],[],[]]
-                        w_f1 = [[],[],[]]
+                        for model_name in models:
+                            s0 = 1 * d
+                            for times in range(5):
+                                Xlags, adj1, w_true,w_mat, p1_true, p1_mat = data_pre(n, d, s0, w_graph_type,p_graph_type, sem_type)
 
-                        p1_fdr = [[],[],[]]
-                        p1_tpr = [[],[],[]]
-                        p1_fpr = [[],[],[]]
-                        p1_shd = [[],[],[]]
-                        p1_nnz = [[],[],[]]
-                        p1_f1 = [[],[],[]]
+                                adj1_torch = torch.Tensor(adj1)
+                                Xlags_torch = torch.Tensor(np.array(Xlags))
 
-                        s0 = 1 * d
-                        for times in range(5):
-                            Xlags, adj1, w_true,w_mat, p1_true, p1_mat = data_pre(n, d, s0, w_graph_type,p_graph_type, sem_type)
+                                if model_name == 'W':
+                                    rho_p = 0
+                                else:
+                                    rho_p = 1
+                                model_1 = GraphNOTEARS.model_p1_MLP(dims=[d, n, 1], bias=True)
+                                model_1.to(device)
+                                W_est_1, P1_est_1 = GraphNOTEARS.linear_model(model_1, Xlags_torch, adj1_torch,\
+                                                                lambda1 = 0.01, lambda2 = 0.01, rho_p=rho_p)
 
+                                # Save the matrices as numpy arrays in npy format  
+                                np.save(f'results/WP/W_est_1_{n}_{d}_{w_graph_type}_{p_graph_type}_{sem_type}_{model_name}_{times}.npy', W_est_1)  
+                                np.save(f'results/WP/P1_est_1_{n}_{d}_{w_graph_type}_{p_graph_type}_{sem_type}_{model_name}_{times}.npy', P1_est_1)  
+                            
+                                threshold = [0.3]
 
-                            string = " n= "+ str(n) + " d= " + str(d) + " s0= " + str(s0) + ' w_graph_type = ' + w_graph_type + ' p_graph_type = ' + p_graph_type + ' sem_type = ' + sem_type + "\n"
-                            print(string)
-                            with open(re_file, 'a') as result_file:
-                                result_file.write(string)
-                            result_file.close()
-                            adj1_torch = torch.Tensor(adj1)
-                            Xlags_torch = torch.Tensor(np.array(Xlags))
-
-                            model_1 = GraphNOTEARS.model_p1_MLP(dims=[d, n, 1], bias=True)
-                            model_1.to(device)
-                            W_est_1, P1_est_1 = GraphNOTEARS.linear_model(model_1, Xlags_torch, adj1_torch,  lambda1 = 0.01, lambda2 = 0.01, lambda3 = 0.01)
-                            # model_notears = notears_torch_version.NotearsMLP(dims=[d, n, 1], bias=True)
-                            # model_notears.to(device)
-                            # W_est_2 = notears_torch_version.notears_nonlinear(model_notears, Xlags_torch[1:], lambda1=0.01, lambda2=0.01)
-
-                            # model_lasso = lasso.lasso_MLP(dims=[d, n, 1], bias=True)
-                            # model_lasso.to(device)
-                            # P1_est_2 = lasso.lasso_model(model_lasso, Xlags_torch, adj1_torch, lambda1=0.01, lambda2=0.01)
-
-                            # # run dynotears
-                            # model_dynotears = dynotears.dynotears_MLP(dims=[d, n, 1], bias=True)
-                            # model_dynotears.to(device)
-                            # W_est_3, P1_est_3 = dynotears.dynotears_model(model_dynotears, Xlags_torch, adj1_torch, lambda1 = 0.01, lambda2 = 0.01, lambda3 = 0.01)
-
-                            w_est = [W_est_1]#, W_est_2, W_est_3] #
-                            p1_est = [P1_est_1]#, P1_est_2, P1_est_3] #
-
-
-                            threshold = [0.3]
-
-                            for i in range(1):
-                                with open(re_file, 'a') as result_file:
-                                    if i == 0:
-                                        print("-----model_p1-----")
-                                        result_file.write("-----model_p1-----"+"\n")
-                                    if i == 1:
-                                        print("-----notears + lasso-----")
-                                        result_file.write("-----notears + lasso-----"+"\n")
-                                    if i == 2:
-                                        print("-----dynotears_p2-----")
-                                        result_file.write("-----dynotears-----"+"\n")
-                                W_est_ = w_est[i]
-                                P1_est_ = p1_est[i]
+                                W_est_ = W_est_1
+                                P1_est_ = P1_est_1
 
                                 for thre in threshold:
 
                                     W_est_[np.abs(W_est_) < thre] = 0
 
-
                                     fdr,tpr,fpr,shd,pred_size = ut.count_accuracy(w_true, W_est_ != 0)
                                     w_f1_ = f1_score(w_true, W_est_ != 0, average="micro")
 
-                                    w_fdr[i].append(fdr)
-                                    w_tpr[i].append(tpr)
-                                    w_fpr[i].append(fpr)
-                                    w_f1[i].append(w_f1_)
-                                    w_shd[i].append(shd)
-                                    w_nnz[i].append(pred_size)
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'fdr_W', fdr])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'tpr_W', tpr])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'fpr_W', fpr])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'shd_W', shd])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'nnz_W', pred_size])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'f1_W', w_f1_])  
 
-                                    # acc = ' fdr = ' + str(fdr) + ' tpr = ' + str(tpr) + ' fpr = ' + str(fpr) + ' shd = ' + str(shd) + ' nnz = ' + str(pred_size)
-                                    acc = " fdr = {:.2f} tpr = {:.2f} fpr = {:.2f} shd = {:.2f} nnz = {:d}".format(fdr, tpr, fpr, shd, pred_size)
-                                    string = "W_est: threshold = " + str(thre) + acc +  "  f1 = {:.2f}".format(w_f1_)  + "\n"
-                                    print(string)
-                                    with open(re_file, 'a') as result_file:
-                                        result_file.write(string)
-                                    W_est_ = w_est[i]
+                                    W_est_ = W_est_1
 
-
-                                for thre in threshold:
                                     P1_est_[np.abs(P1_est_) < thre] = 0
 
                                     fdr,tpr,fpr,shd,pred_size = ut.count_accuracy(p1_true, P1_est_ != 0)
                                     p1_f1_ = f1_score(p1_true, P1_est_ != 0, average="micro")
 
-                                    p1_fdr[i].append(fdr)
-                                    p1_tpr[i].append(tpr)
-                                    p1_fpr[i].append(fpr)
-                                    p1_f1[i].append(p1_f1_)
-                                    p1_shd[i].append(shd)
-                                    p1_nnz[i].append(pred_size)
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'fdr_P1', fdr])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'tpr_P1', tpr])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'fpr_P1', fpr])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'shd_P1', shd])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'nnz_P1', pred_size])  
+                                    results.append([n, d, w_graph_type, p_graph_type, sem_type, model_name, times, thre, 'f1_P1', p1_f1_])
 
-                                    # acc = ' fdr = ' + str(fdr) + ' tpr = ' + str(tpr) + ' fpr = ' + str(fpr) + ' shd = ' + str(shd) + ' nnz = ' + str(pred_size)
-                                    acc = " fdr = {:.2f} tpr = {:.2f} fpr = {:.2f} shd = {:.2f} nnz = {:d}".format(fdr, tpr, fpr, shd, pred_size)
-
-                                    string = "P1_est: threshold = " + str(thre) + acc + "  f1 = {:.2f}".format(p1_f1_) +"\n"
-                                    print(string)
-                                    with open(re_file, 'a') as result_file:
-                                        result_file.write(string)
-
-                               
-
-                        with open(re_file, 'a') as result_file:
-                            result_file.write("\n")
-                            result_file.write("mean and var for each model with " + ' n = ' +str(n) + ' d = ' +str(d) + ' w_graph_type = ' + w_graph_type + ' p_graph_type = ' + p_graph_type + ' sem_type = ' + sem_type + "\n")
-                            result_file.write("\n")
-                        for i in range(1):
-                            if i == 0:
-                                model_name = "model_1: "
-                            if i == 1:
-                                model_name = "notears + lasso: "
-                            if i == 2:
-                                model_name = "dynotears: "
-                            string = model_name + " w_fdr mean = {:.2f} ".format(np.mean(w_fdr[i])) + " w_fdr var = {:.2f}".format(np.var(w_fdr[i])) +  \
-                                     " | w_tpr mean = {:.2f}".format(np.mean(w_tpr[i])) + " w_tpr var = {:.2f}".format(np.var(w_tpr[i])) + \
-                                    " | w_fpr mean = {:.2f}".format(np.mean(w_fpr[i])) + " w_fpr var = {:.2f}".format(np.var(w_fpr[i])) + \
-                                    " | w_f1 mean = {:.2f}".format(np.mean(w_f1[i])) + " w_f1 var = {:.2f}".format(np.var(w_f1[i])) + \
-                                     " | w_shd mean = {:.2f}".format(np.mean(w_shd[i])) + " w_shd var = {:.2f}".format(np.var(w_shd[i])) + "\n"
-
-                            with open(re_file, 'a') as result_file:
-                                result_file.write(string)
-                                result_file.write("\n")
+                                    P1_est_ = P1_est_1
 
                         print('p1_mat=', p1_mat)
-                        for i in range(1):
-                            if i == 0:
-                                model_name = "model_1"
-                            if i == 1:
-                                model_name = "notears + lasso"
-                            if i == 2:
-                                model_name = "dynotears"
-                            string = model_name + " p1_fdr mean = {:.2f}".format(np.mean(p1_fdr[i])) + " p1_fdr var = {:.2f}".format(np.var(p1_fdr[i])) +  \
-                                     " | p1_tpr mean = {:.2f}".format(np.mean(p1_tpr[i])) + " p1_tpr var = {:.2f}".format(np.var(p1_tpr[i])) + \
-                                    " | p1_fpr mean = {:.2f}".format(np.mean(p1_fpr[i])) + " p1_fpr var = {:.2f}".format(np.var(p1_fpr[i])) + \
-                                    " | p1_f1 mean = {:.2f}".format(np.mean(p1_f1[i])) + " p1_f1 var = {:.2f}".format(np.var(p1_f1[i])) + \
-                                    " | p1_shd mean = {:.2f}".format(np.mean(p1_shd[i])) + " p1_shd var = {:.2f}".format(np.var(p1_shd[i])) + "\n"
-                            with open(re_file, 'a') as result_file:
-                                result_file.write(string)
-                                result_file.write("\n")
-                                # formatted_string = np.array2string(p1_est, separator=', ')
-                                # result_file.write(formatted_string)
-                                # result_file.write("\n")
-                            print('p1_est=', p1_est[i])
+                        print('p1_est=', P1_est_1)
 
+    # Create a DataFrame from the results  
+    df = pd.DataFrame(results, columns=columns)  
 
+    # Save the DataFrame to an Excel file  
+    df.to_excel('results/results.xlsx', index=False)
 if __name__ == '__main__':
     main()
+
+# W_est_1 = np.load('results/WP/W_est_1_{n}_{d}_{w_graph_type}_{p_graph_type}_{sem_type}_{model_name}_{times}.npy')  
+# P1_est_1 = np.load('results/WP/P1_est_1_{n}_{d}_{w_graph_type}_{p_graph_type}_{sem_type}_{model_name}_{times}.npy')

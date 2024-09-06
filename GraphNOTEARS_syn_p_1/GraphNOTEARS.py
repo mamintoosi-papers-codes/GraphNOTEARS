@@ -21,7 +21,7 @@ class model_p1_MLP(nn.Module):
         self.node_nums = nums
         self.w_est = nn.Parameter(torch.ones((d, d)))
         self.p1_est = nn.Parameter(torch.ones((d, d)))
-        self.p2_est = nn.Parameter(torch.ones((d, d)))
+        # self.p2_est = nn.Parameter(torch.ones((d, d)))
 
     def forward(self, Xlags, adj1):  # [n, d] -> [n, d]
         # M = XW + A@Xlag1@P1 + A@Xlag2@P2
@@ -38,6 +38,16 @@ class model_p1_MLP(nn.Module):
         diag_loss = torch.trace(self.w_est * self.w_est)
         return diag_loss
 
+    def h_func_P(self):
+        """Constrain 2-norm-squared of fc1 weights along P dim to be a DAG"""
+        d = self.dims[0]
+        h = trace_expm(self.p1_est * self.p1_est) - d  # (Zheng et al. 2018)
+        return h
+
+    # def diag_zero(self):
+    #     diag_loss = torch.trace(self.p1_est * self.p1_est)
+    #     return diag_loss
+
 def squared_loss(output, target):
     n = target.shape[0] * target.shape[1]
     loss = 0.5 / n * torch.sum((output - target) ** 2)
@@ -46,7 +56,7 @@ def squared_loss(output, target):
 def L1Norm(matrix):
     return  torch.abs(matrix).sum()
 
-def dual_ascent_step(model, X_lags, adj1, lambda1, lambda2, lambda3, rho, alpha, h, rho_max):
+def dual_ascent_step(model, X_lags, adj1, lambda1, lambda2, rho_p, rho, alpha, h, rho_max):
     """Perform one step of dual ascent in augmented Lagrangian."""
     h_new = None
     optimizer = LBFGSBScipy(model.parameters())
@@ -59,8 +69,13 @@ def dual_ascent_step(model, X_lags, adj1, lambda1, lambda2, lambda3, rho, alpha,
             loss = squared_loss(X_hat, X_lags[1:])
             h_val = model.h_func()
             diag_loss = model.diag_zero()
+            h_val_P = model.h_func_P()
             penalty1 = 0.5 * rho * h_val * h_val + alpha * h_val
-            primal_obj = primal + loss + 100 * penalty1 + 1000 * diag_loss +  lambda1 * L1Norm(model.w_est) + lambda2 * L1Norm(model.p1_est) #+ lambda3 * L1Norm(model.p2_est) # l2_reg + l1_reg
+            penaltyP = 0.5 * rho_p * h_val_P * h_val_P #+ alpha * h_val_P
+            primal_obj = primal + loss + 100 * penalty1 + 1000 * diag_loss + \
+                     penaltyP + lambda1 * L1Norm(model.w_est) + lambda2 * L1Norm(model.p1_est) 
+                     # 
+                    #+ lambda3 * L1Norm(model.p2_est) # l2_reg + l1_reg
             # print("h", h)
             primal_obj.backward()
             return primal_obj
@@ -80,13 +95,14 @@ def linear_model(model: nn.Module,
                       adj1,
                       lambda1: float = 0.,
                       lambda2: float = 0.,
-                      lambda3: float = 0.,
+                      rho_p: float = 0.,
                       max_iter: int = 100,
                       h_tol: float = 1e-8,
-                      rho_max: float = 1e+16):
+                      rho_max: float = 1e+16
+                      ):
     rho, alpha, h = 1.0, 0.0, np.inf
     for _ in range(max_iter):
-        rho, alpha, h = dual_ascent_step(model, Xlags, adj1, lambda1, lambda2, lambda3,
+        rho, alpha, h = dual_ascent_step(model, Xlags, adj1, lambda1, lambda2, rho_p,
                                          rho, alpha, h, rho_max)
         if h <= h_tol or rho >= rho_max:
             break
@@ -96,8 +112,8 @@ def linear_model(model: nn.Module,
     P1_est = model.p1_est
     P1_est = P1_est.detach().numpy()
 
-    P2_est = model.p2_est
-    P2_est = P2_est.detach().numpy()
+    # P2_est = model.p2_est
+    # P2_est = P2_est.detach().numpy()
 
     return W_est, P1_est
 
