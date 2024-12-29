@@ -383,12 +383,15 @@ def generate_tri(num_nodes, graph_type, low_value, high_value):#num_nodes是变�
         # ER图的设置
         prob = degree / num_nodes
         b = (np.random.rand(num_nodes, num_nodes) < prob).astype(float)
-        print("b***********************", b)
+        print("b***********************")
+        print(b)
         # 生成a矩阵
         a = (b != 0).astype(float) * u_i
-        print("a**********************", a)
+        print("a**********************")
+        print(a)
         p_mat = a
         p_true = matrix_to_zerone(p_mat)
+        print(p_true)
 
     elif graph_type == 'SBM':########################################################################
         p_in = 0.3

@@ -48,8 +48,8 @@ def main():
 
     d_ = [5, 10, 20]# [5] #[5, 10, 20, 30]
 
-    w_graph_types = ['ER']#['ER', 'BA'] 
-    p_graph_types = ['ER']#['ER', 'SBM'] 
+    w_graph_types = ['BA']#['ER', 'BA'] 
+    p_graph_types = ['SBM']#['ER', 'SBM'] 
     sem_types = ['exp']
 
 
@@ -191,6 +191,7 @@ def main():
                                 result_file.write(string)
                                 result_file.write("\n")
 
+                        print('p1_mat=', p1_mat)
                         for i in range(3):
                             if i == 0:
                                 model_name = "model_1"
@@ -206,6 +207,10 @@ def main():
                             with open(re_file, 'a') as result_file:
                                 result_file.write(string)
                                 result_file.write("\n")
+                                # formatted_string = np.array2string(p1_est, separator=', ')
+                                # result_file.write(formatted_string)
+                                # result_file.write("\n")
+                            print('p1_est=', p1_est[i])
 
 
 if __name__ == '__main__':
