@@ -4,3 +4,653 @@
  n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
  n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
  n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.43 tpr = 0.80 fpr = 0.15 shd = 3.00 nnz = 7  f1 = 0.6666666666666666
+P1_est: threshold = 0.3 acc =  fdr = 0.17 tpr = 0.91 fpr = 0.14 shd = 3.00 nnz = 12  f1 = 0.8695652173913043
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.67 tpr = 0.60 fpr = 0.30 shd = 7.00 nnz = 9  f1 = 0.42857142857142855
+P1_est: threshold = 0.3 acc =  fdr = 0.36 tpr = 0.82 fpr = 0.36 shd = 7.00 nnz = 14  f1 = 0.7200000000000001
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.62 tpr = 0.60 fpr = 0.25 shd = 6.00 nnz = 8  f1 = 0.4615384615384615
+P1_est: threshold = 0.3 acc =  fdr = 0.47 tpr = 0.73 fpr = 0.50 shd = 8.00 nnz = 15  f1 = 0.6153846153846153
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 0.80 fpr = 0.00 shd = 1.00 nnz = 4  f1 = 0.888888888888889
+P1_est: threshold = 0.3 acc =  fdr = 0.36 tpr = 0.78 fpr = 0.25 shd = 5.00 nnz = 11  f1 = 0.7000000000000001
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.86 tpr = 0.20 fpr = 0.30 shd = 7.00 nnz = 7  f1 = 0.16666666666666666
+P1_est: threshold = 0.3 acc =  fdr = 0.53 tpr = 0.78 fpr = 0.50 shd = 8.00 nnz = 15  f1 = 0.5833333333333334
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.67 tpr = 0.40 fpr = 0.20 shd = 4.00 nnz = 6  f1 = 0.3636363636363636
+P1_est: threshold = 0.3 acc =  fdr = 0.82 tpr = 0.22 fpr = 0.56 shd = 13.00 nnz = 11  f1 = 0.19999999999999998
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.33 tpr = 0.80 fpr = 0.10 shd = 2.00 nnz = 6  f1 = 0.7272727272727272
+P1_est: threshold = 0.3 acc =  fdr = 0.36 tpr = 0.88 fpr = 0.24 shd = 4.00 nnz = 11  f1 = 0.7368421052631579
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.80 tpr = 0.20 fpr = 0.20 shd = 6.00 nnz = 5  f1 = 0.20000000000000004
+P1_est: threshold = 0.3 acc =  fdr = 0.59 tpr = 0.88 fpr = 0.59 shd = 9.00 nnz = 17  f1 = 0.56
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 1.00 tpr = 0.00 fpr = 0.25 shd = 7.00 nnz = 5  f1 = 0.0
+P1_est: threshold = 0.3 acc =  fdr = 0.60 tpr = 0.50 fpr = 0.35 shd = 9.00 nnz = 10  f1 = 0.4444444444444445
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.17 tpr = 1.00 fpr = 0.05 shd = 1.00 nnz = 6  f1 = 0.9090909090909091
+P1_est: threshold = 0.3 acc =  fdr = 0.40 tpr = 1.00 fpr = 0.21 shd = 4.00 nnz = 10  f1 = 0.7499999999999999
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.67 tpr = 0.60 fpr = 0.30 shd = 6.00 nnz = 9  f1 = 0.42857142857142855
+P1_est: threshold = 0.3 acc =  fdr = 0.58 tpr = 0.83 fpr = 0.37 shd = 6.00 nnz = 12  f1 = 0.5555555555555556
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.56 tpr = 0.80 fpr = 0.25 shd = 5.00 nnz = 9  f1 = 0.5714285714285714
+P1_est: threshold = 0.3 acc =  fdr = 0.71 tpr = 0.33 fpr = 0.26 shd = 9.00 nnz = 7  f1 = 0.30769230769230765
+ n= 20 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.83 tpr = 0.20 fpr = 0.25 shd = 6.00 nnz = 6  f1 = 0.1818181818181818
+P1_est: threshold = 0.3 acc =  fdr = 0.50 tpr = 1.00 fpr = 0.47 shd = 8.00 nnz = 16  f1 = 0.6666666666666666
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.88 tpr = 0.20 fpr = 0.35 shd = 9.00 nnz = 8  f1 = 0.15384615384615385
+P1_est: threshold = 0.3 acc =  fdr = 0.65 tpr = 0.88 fpr = 0.76 shd = 9.00 nnz = 20  f1 = 0.4999999999999999
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.80 tpr = 0.20 fpr = 0.20 shd = 6.00 nnz = 5  f1 = 0.20000000000000004
+P1_est: threshold = 0.3 acc =  fdr = 0.42 tpr = 0.88 fpr = 0.29 shd = 5.00 nnz = 12  f1 = 0.7000000000000001
+
+mean and var for each model with  n = 20 d = 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.35238095238095235 w_fdr var = 0.07922902494331067 | w_tpr mean = 0.7200000000000001 w_tpr var = 0.0736 | w_fpr mean = 0.11000000000000001 w_fpr var = 0.0073999999999999995 | w_f1 mean = 0.6747474747474748 w_f1 var = 0.06931537598204265 | w_shd mean = 2.6 w_shd var = 3.44
+
+notears + lasso:  w_fdr mean = 0.7730952380952381 w_fdr var = 0.008165306122448982 | w_tpr mean = 0.36 w_tpr var = 0.0384 | w_fpr mean = 0.29000000000000004 w_fpr var = 0.0023999999999999994 | w_f1 mean = 0.2755311355311355 w_f1 var = 0.015841264474231502 | w_shd mean = 7.0 w_shd var = 1.2
+
+dynotears:  w_fdr mean = 0.7294444444444445 w_fdr var = 0.02465308641975309 | w_tpr mean = 0.4 w_tpr var = 0.08 | w_fpr mean = 0.22999999999999998 w_fpr var = 0.0005999999999999996 | w_f1 mean = 0.3193206793206793 w_f1 var = 0.04039025749475299 | w_shd mean = 5.6 w_shd var = 1.0399999999999998
+
+model_1 p1_fdr mean = 0.35878787878787877 p1_fdr var = 0.01171937557392103 | p1_tpr mean = 0.9123737373737374 p1_tpr var = 0.006976073870013264 | p1_fpr mean = 0.26185316231755856 p1_fpr var = 0.012242141764641331 | p1_f1 mean = 0.7446147978642258 p1_f1 var = 0.004753682767592878 | p1_shd mean = 4.8 p1_shd var = 2.96
+
+notears + lasso p1_fdr mean = 0.5424089635854342 p1_fdr var = 0.009951316997387192 | p1_tpr mean = 0.8358585858585859 p1_tpr var = 0.001351265177022752 | p1_fpr mean = 0.5157010172490049 p1_fpr var = 0.02286864884457938 | p1_f1 mean = 0.5837777777777778 p1_f1 var = 0.005387456790123464 | p1_shd mean = 7.8 p1_shd var = 1.3599999999999999
+
+dynotears p1_fdr mean = 0.6031601731601731 p1_fdr var = 0.022400697138359477 | p1_tpr mean = 0.5315656565656566 p1_tpr var = 0.058446842158963376 | p1_fpr mean = 0.3945433436532508 p1_fpr var = 0.013681748363350555 | p1_f1 mean = 0.45350427350427347 p1_f1 var = 0.03451460296588502 | p1_shd mean = 8.8 p1_shd var = 6.56
+
+ n= 100 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.20 tpr = 0.80 fpr = 0.05 shd = 1.00 nnz = 5  f1 = 0.8000000000000002
+P1_est: threshold = 0.3 acc =  fdr = 0.21 tpr = 1.00 fpr = 0.21 shd = 3.00 nnz = 14  f1 = 0.88
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.62 tpr = 0.60 fpr = 0.25 shd = 7.00 nnz = 8  f1 = 0.4615384615384615
+P1_est: threshold = 0.3 acc =  fdr = 0.29 tpr = 0.91 fpr = 0.29 shd = 4.00 nnz = 14  f1 = 0.8
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.20 tpr = 0.80 fpr = 0.05 shd = 2.00 nnz = 5  f1 = 0.8000000000000002
+P1_est: threshold = 0.3 acc =  fdr = 0.11 tpr = 0.73 fpr = 0.07 shd = 2.00 nnz = 9  f1 = 0.7999999999999999
+ n= 100 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.39 tpr = 1.00 fpr = 0.50 shd = 6.00 nnz = 18  f1 = 0.7586206896551725
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.40 tpr = 0.60 fpr = 0.10 shd = 3.00 nnz = 5  f1 = 0.6
+P1_est: threshold = 0.3 acc =  fdr = 0.57 tpr = 0.91 fpr = 0.93 shd = 11.00 nnz = 23  f1 = 0.5882352941176471
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.38 tpr = 1.00 fpr = 0.15 shd = 3.00 nnz = 8  f1 = 0.7692307692307693
+P1_est: threshold = 0.3 acc =  fdr = 0.44 tpr = 0.45 fpr = 0.29 shd = 8.00 nnz = 9  f1 = 0.5
+ n= 100 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.40 tpr = 0.75 fpr = 0.46 shd = 7.00 nnz = 15  f1 = 0.6666666666666665
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.62 tpr = 0.60 fpr = 0.25 shd = 6.00 nnz = 8  f1 = 0.4615384615384615
+P1_est: threshold = 0.3 acc =  fdr = 0.47 tpr = 0.83 fpr = 0.69 shd = 10.00 nnz = 19  f1 = 0.6451612903225806
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.40 tpr = 0.60 fpr = 0.10 shd = 3.00 nnz = 5  f1 = 0.6
+P1_est: threshold = 0.3 acc =  fdr = 0.40 tpr = 0.50 fpr = 0.31 shd = 9.00 nnz = 10  f1 = 0.5454545454545454
+ n= 100 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.09 tpr = 0.77 fpr = 0.08 shd = 3.00 nnz = 11  f1 = 0.8333333333333333
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.56 tpr = 0.80 fpr = 0.25 shd = 5.00 nnz = 9  f1 = 0.5714285714285714
+P1_est: threshold = 0.3 acc =  fdr = 0.29 tpr = 0.77 fpr = 0.33 shd = 5.00 nnz = 14  f1 = 0.7407407407407408
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.44 tpr = 1.00 fpr = 0.20 shd = 4.00 nnz = 9  f1 = 0.7142857142857143
+P1_est: threshold = 0.3 acc =  fdr = 0.44 tpr = 0.38 fpr = 0.33 shd = 9.00 nnz = 9  f1 = 0.4545454545454546
+ n= 100 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.21 tpr = 0.73 fpr = 0.30 shd = 4.00 nnz = 14  f1 = 0.7586206896551724
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.33 tpr = 0.80 fpr = 0.10 shd = 3.00 nnz = 6  f1 = 0.7272727272727272
+P1_est: threshold = 0.3 acc =  fdr = 0.31 tpr = 0.73 fpr = 0.50 shd = 5.00 nnz = 16  f1 = 0.7096774193548386
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.40 tpr = 0.60 fpr = 0.10 shd = 3.00 nnz = 5  f1 = 0.6
+P1_est: threshold = 0.3 acc =  fdr = 0.27 tpr = 0.53 fpr = 0.30 shd = 7.00 nnz = 11  f1 = 0.6153846153846153
+
+mean and var for each model with  n = 100 d = 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.04 w_fdr var = 0.0064 | w_tpr mean = 0.96 w_tpr var = 0.006399999999999998 | w_fpr mean = 0.01 w_fpr var = 0.0004 | w_f1 mean = 0.9600000000000002 w_f1 var = 0.006399999999999989 | w_shd mean = 0.2 w_shd var = 0.16000000000000006
+
+notears + lasso:  w_fdr mean = 0.5077777777777779 w_fdr var = 0.014362345679012348 | w_tpr mean = 0.6799999999999999 w_tpr var = 0.009600000000000006 | w_fpr mean = 0.19 w_fpr var = 0.005399999999999999 | w_f1 mean = 0.5643556443556442 w_f1 var = 0.009801053691563177 | w_shd mean = 4.8 w_shd var = 2.56
+
+dynotears:  w_fdr mean = 0.3638888888888888 w_fdr var = 0.0072160493827160485 | w_tpr mean = 0.8 w_tpr var = 0.03200000000000001 | w_fpr mean = 0.12 w_fpr var = 0.0026 | w_f1 mean = 0.6967032967032968 w_f1 var = 0.006988527955560932 | w_shd mean = 3.0 w_shd var = 0.4
+
+model_1 p1_fdr mean = 0.2616738816738816 p1_fdr var = 0.013793932730729269 | p1_tpr mean = 0.8505128205128205 p1_tpr var = 0.015026692965154503 | p1_fpr mean = 0.3118315018315018 p1_fpr var = 0.023937227119644706 | p1_f1 mean = 0.779448275862069 p1_f1 var = 0.005320303342581588 | p1_shd mean = 4.6 p1_shd var = 2.6399999999999997
+
+notears + lasso p1_fdr mean = 0.38456603465184697 p1_fdr var = 0.013062762363610463 | p1_tpr mean = 0.8308158508158507 p1_tpr var = 0.005111174140544769 | p1_fpr mean = 0.547985347985348 p1_fpr var = 0.0565677789853614 | p1_f1 mean = 0.6967629489071614 p1_f1 var = 0.0054399402925277155 | p1_shd mean = 7.0 p1_shd var = 8.4
+
+dynotears p1_fdr mean = 0.33454545454545453 p1_fdr var = 0.01643685338230793 | p1_tpr mean = 0.51995337995338 p1_tpr var = 0.013230608397041963 | p1_fpr mean = 0.25963369963369964 p1_fpr var = 0.009094414254853815 | p1_f1 mean = 0.583076923076923 p1_f1 var = 0.014587393026553857 | p1_shd mean = 7.0 p1_shd var = 6.8
+
+ n= 100 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.10 tpr = 0.90 fpr = 0.01 shd = 1.00 nnz = 10  f1 = 0.9
+P1_est: threshold = 0.3 acc =  fdr = 0.42 tpr = 0.88 fpr = 0.05 shd = 6.00 nnz = 12  f1 = 0.7000000000000001
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.46 tpr = 0.70 fpr = 0.07 shd = 9.00 nnz = 13  f1 = 0.608695652173913
+P1_est: threshold = 0.3 acc =  fdr = 0.57 tpr = 0.75 fpr = 0.09 shd = 9.00 nnz = 14  f1 = 0.5454545454545454
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.20 tpr = 0.80 fpr = 0.02 shd = 3.00 nnz = 10  f1 = 0.8000000000000002
+P1_est: threshold = 0.3 acc =  fdr = 0.33 tpr = 0.25 fpr = 0.01 shd = 7.00 nnz = 3  f1 = 0.36363636363636365
+ n= 100 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.78 fpr = 0.00 shd = 2.00 nnz = 7  f1 = 0.8750000000000001
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.50 tpr = 0.90 fpr = 0.10 shd = 9.00 nnz = 18  f1 = 0.6428571428571429
+P1_est: threshold = 0.3 acc =  fdr = 0.59 tpr = 0.78 fpr = 0.11 shd = 12.00 nnz = 17  f1 = 0.5384615384615384
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.11 fpr = 0.00 shd = 8.00 nnz = 1  f1 = 0.19999999999999998
+ n= 100 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.45 tpr = 0.55 fpr = 0.06 shd = 9.00 nnz = 11  f1 = 0.5454545454545454
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.40 tpr = 0.90 fpr = 0.07 shd = 6.00 nnz = 15  f1 = 0.7200000000000001
+P1_est: threshold = 0.3 acc =  fdr = 0.56 tpr = 0.73 fpr = 0.11 shd = 13.00 nnz = 18  f1 = 0.5517241379310345
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.09 tpr = 1.00 fpr = 0.01 shd = 1.00 nnz = 11  f1 = 0.9523809523809523
+P1_est: threshold = 0.3 acc =  fdr = 1.00 tpr = 0.00 fpr = 0.01 shd = 11.00 nnz = 1  f1 = 0.0
+ n= 100 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.20 tpr = 0.67 fpr = 0.02 shd = 5.00 nnz = 10  f1 = 0.7272727272727272
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.81 tpr = 0.50 fpr = 0.23 shd = 23.00 nnz = 26  f1 = 0.2777777777777778
+P1_est: threshold = 0.3 acc =  fdr = 0.63 tpr = 0.58 fpr = 0.14 shd = 15.00 nnz = 19  f1 = 0.4516129032258065
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.50 tpr = 0.70 fpr = 0.08 shd = 8.00 nnz = 14  f1 = 0.5833333333333334
+P1_est: threshold = 0.3 acc =  fdr = 0.70 tpr = 0.25 fpr = 0.08 shd = 13.00 nnz = 10  f1 = 0.2727272727272727
+ n= 100 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.43 tpr = 0.89 fpr = 0.07 shd = 6.00 nnz = 14  f1 = 0.6956521739130435
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.65 tpr = 0.70 fpr = 0.14 shd = 14.00 nnz = 20  f1 = 0.4666666666666667
+P1_est: threshold = 0.3 acc =  fdr = 0.59 tpr = 0.78 fpr = 0.11 shd = 11.00 nnz = 17  f1 = 0.5384615384615384
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.27 tpr = 0.80 fpr = 0.03 shd = 4.00 nnz = 11  f1 = 0.761904761904762
+P1_est: threshold = 0.3 acc =  fdr = 0.67 tpr = 0.11 fpr = 0.02 shd = 9.00 nnz = 3  f1 = 0.16666666666666666
+
+mean and var for each model with  n = 100 d = 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.02 w_fdr var = 0.0016 | w_tpr mean = 0.9800000000000001 w_tpr var = 0.001599999999999999 | w_fpr mean = 0.0022222222222222222 w_fpr var = 1.9753086419753087e-05 | w_f1 mean = 0.9800000000000001 w_f1 var = 0.001599999999999999 | w_shd mean = 0.2 w_shd var = 0.16000000000000006
+
+notears + lasso:  w_fdr mean = 0.5638461538461539 w_fdr var = 0.021654437869822483 | w_tpr mean = 0.74 w_tpr var = 0.022400000000000007 | w_fpr mean = 0.12222222222222223 w_fpr var = 0.0039012345679012342 | w_f1 mean = 0.5431994478951001 w_f1 var = 0.024357154747020986 | w_shd mean = 12.2 w_shd var = 35.760000000000005
+
+dynotears:  w_fdr mean = 0.2127272727272727 w_fdr var = 0.029276033057851238 | w_tpr mean = 0.86 w_tpr var = 0.014400000000000001 | w_fpr mean = 0.028888888888888888 w_fpr var = 0.0007209876543209877 | w_f1 mean = 0.8195238095238097 w_f1 var = 0.021941950113378676 | w_shd mean = 3.2 w_shd var = 7.760000000000001
+
+model_1 p1_fdr mean = 0.29995670995671 p1_fdr var = 0.030805202301306196 | p1_tpr mean = 0.7507575757575757 p1_tpr var = 0.016893429241914094 | p1_fpr mean = 0.039837788005838815 p1_fpr var = 0.0006076873122434366 | p1_f1 mean = 0.7086758893280632 p1_f1 var = 0.010979129497414437 | p1_shd mean = 5.6 p1_shd var = 5.04
+
+notears + lasso p1_fdr mean = 0.5870067325175684 p1_fdr var = 0.0006443113398263056 | p1_tpr mean = 0.7232323232323232 p1_tpr var = 0.005250994796449341 | p1_fpr mean = 0.11109198568895687 p1_fpr var = 0.00024513453589499357 | p1_f1 mean = 0.5251429327068926 p1_f1 var = 0.0013761115675126644 | p1_shd mean = 12.0 p1_shd var = 4.0
+
+dynotears p1_fdr mean = 0.5399999999999999 p1_fdr var = 0.1175111111111111 | p1_tpr mean = 0.14444444444444446 p1_tpr var = 0.009074074074074073 | p1_fpr mean = 0.024725799359409523 p1_fpr var = 0.0007996162306280252 | p1_f1 mean = 0.2006060606060606 p1_f1 var = 0.01463507805325987 | p1_shd mean = 9.6 p1_shd var = 4.64
+
+ n= 100 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 20  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.13 tpr = 0.85 fpr = 0.01 shd = 11.00 nnz = 39  f1 = 0.8607594936708861
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.85 tpr = 0.55 fpr = 0.17 shd = 70.00 nnz = 75  f1 = 0.23157894736842105
+P1_est: threshold = 0.3 acc =  fdr = 0.66 tpr = 0.88 fpr = 0.19 shd = 69.00 nnz = 104  f1 = 0.48611111111111105
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.62 tpr = 0.80 fpr = 0.07 shd = 27.00 nnz = 42  f1 = 0.5161290322580645
+P1_est: threshold = 0.3 acc =  fdr = 1.00 tpr = 0.00 fpr = 0.03 shd = 50.00 nnz = 11  f1 = 0.0
+ n= 100 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.10 tpr = 0.90 fpr = 0.01 shd = 2.00 nnz = 20  f1 = 0.9
+P1_est: threshold = 0.3 acc =  fdr = 0.19 tpr = 0.79 fpr = 0.02 shd = 16.00 nnz = 42  f1 = 0.8
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.87 tpr = 0.40 fpr = 0.14 shd = 60.00 nnz = 62  f1 = 0.1951219512195122
+P1_est: threshold = 0.3 acc =  fdr = 0.55 tpr = 0.77 fpr = 0.11 shd = 46.00 nnz = 73  f1 = 0.5689655172413793
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.74 tpr = 0.55 fpr = 0.08 shd = 34.00 nnz = 43  f1 = 0.34920634920634924
+P1_est: threshold = 0.3 acc =  fdr = 0.47 tpr = 0.19 fpr = 0.02 shd = 36.00 nnz = 15  f1 = 0.27586206896551724
+ n= 100 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.10 tpr = 0.95 fpr = 0.01 shd = 2.00 nnz = 21  f1 = 0.9268292682926829
+P1_est: threshold = 0.3 acc =  fdr = 0.06 tpr = 0.79 fpr = 0.01 shd = 10.00 nnz = 32  f1 = 0.8571428571428572
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.80 tpr = 0.80 fpr = 0.17 shd = 66.00 nnz = 80  f1 = 0.32000000000000006
+P1_est: threshold = 0.3 acc =  fdr = 0.63 tpr = 0.74 fpr = 0.13 shd = 55.00 nnz = 75  f1 = 0.49557522123893805
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.47 tpr = 0.95 fpr = 0.04 shd = 18.00 nnz = 36  f1 = 0.6785714285714285
+P1_est: threshold = 0.3 acc =  fdr = 0.46 tpr = 0.18 fpr = 0.02 shd = 34.00 nnz = 13  f1 = 0.2745098039215686
+ n= 100 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.14 tpr = 0.95 fpr = 0.01 shd = 3.00 nnz = 22  f1 = 0.9047619047619048
+P1_est: threshold = 0.3 acc =  fdr = 0.09 tpr = 0.69 fpr = 0.01 shd = 16.00 nnz = 32  f1 = 0.7837837837837837
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.85 tpr = 0.55 fpr = 0.17 shd = 69.00 nnz = 75  f1 = 0.23157894736842105
+P1_est: threshold = 0.3 acc =  fdr = 0.47 tpr = 0.76 fpr = 0.08 shd = 36.00 nnz = 60  f1 = 0.6274509803921569
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.57 tpr = 0.75 fpr = 0.05 shd = 22.00 nnz = 35  f1 = 0.5454545454545454
+P1_est: threshold = 0.3 acc =  fdr = 0.50 tpr = 0.19 fpr = 0.02 shd = 41.00 nnz = 16  f1 = 0.27586206896551724
+ n= 100 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 20  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.06 tpr = 0.70 fpr = 0.01 shd = 16.00 nnz = 34  f1 = 0.7999999999999999
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.85 tpr = 0.35 fpr = 0.11 shd = 49.00 nnz = 47  f1 = 0.208955223880597
+P1_est: threshold = 0.3 acc =  fdr = 0.56 tpr = 0.76 fpr = 0.12 shd = 53.00 nnz = 79  f1 = 0.5599999999999999
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.53 tpr = 0.85 fpr = 0.05 shd = 19.00 nnz = 36  f1 = 0.6071428571428571
+P1_est: threshold = 0.3 acc =  fdr = 0.38 tpr = 0.17 fpr = 0.01 shd = 42.00 nnz = 13  f1 = 0.2711864406779661
+
+mean and var for each model with  n = 100 d = 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.06632034632034631 w_fdr var = 0.003134678885328236 | w_tpr mean = 0.96 w_tpr var = 0.0013999999999999998 | w_fpr mean = 0.00368421052631579 w_fpr var = 9.97229916897507e-06 | w_f1 mean = 0.9463182346109175 w_f1 var = 0.0020031182173444436 | w_shd mean = 1.4 w_shd var = 1.44
+
+notears + lasso:  w_fdr mean = 0.845739647677877 w_fdr var = 0.0005744494296736755 | w_tpr mean = 0.53 w_tpr var = 0.024600000000000004 | w_fpr mean = 0.15052631578947367 w_fpr var = 0.0006160664819944599 | w_f1 mean = 0.23744701396739026 w_f1 var = 0.0018974113906163703 | w_shd mean = 62.8 w_shd var = 59.75999999999999
+
+dynotears:  w_fdr mean = 0.5869324473975637 w_fdr var = 0.008531631910420962 | w_tpr mean = 0.78 w_tpr var = 0.01759999999999999 | w_fpr mean = 0.06 w_fpr var = 0.00020886426592797784 | w_f1 mean = 0.539300842526649 w_f1 var = 0.012141910465198337 | w_shd mean = 24.0 w_shd var = 34.8
+
+model_1 p1_fdr mean = 0.10675096961861667 p1_fdr var = 0.0023788813152595995 | p1_tpr mean = 0.763259944603673 p1_tpr var = 0.00376642237887551 | p1_fpr mean = 0.011170464027011362 p1_fpr var = 4.076649695992269e-05 | p1_f1 mean = 0.8203372269195054 p1_f1 var = 0.001030394773617048 | p1_shd mean = 13.8 p1_shd var = 7.359999999999999
+
+notears + lasso p1_fdr mean = 0.5723404205181558 p1_fdr var = 0.004650592592933966 | p1_tpr mean = 0.7804116585700855 p1_tpr var = 0.0023475749218994668 | p1_fpr mean = 0.12721036291020232 p1_fpr var = 0.0013601622356636622 | p1_f1 mean = 0.547620565996717 p1_f1 var = 0.0026947766687413525 | p1_shd mean = 51.8 p1_shd var = 118.16000000000001
+
+dynotears p1_fdr mean = 0.5625641025641026 p1_fdr var = 0.04926653517422748 | p1_tpr mean = 0.14692925437962956 p1_tpr var = 0.0054265438723754165 | p1_fpr mean = 0.020641729365712822 p1_fpr var = 3.225545808705542e-05 | p1_f1 mean = 0.21948407650611385 p1_f1 var = 0.012046236209161098 | p1_shd mean = 40.6 p1_shd var = 31.04
+
+ n= 200 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.25 tpr = 0.69 fpr = 0.25 shd = 5.00 nnz = 12  f1 = 0.7199999999999999
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.70 tpr = 0.60 fpr = 0.35 shd = 7.00 nnz = 10  f1 = 0.4
+P1_est: threshold = 0.3 acc =  fdr = 0.33 tpr = 0.77 fpr = 0.42 shd = 7.00 nnz = 15  f1 = 0.7142857142857142
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.62 tpr = 0.60 fpr = 0.25 shd = 6.00 nnz = 8  f1 = 0.4615384615384615
+P1_est: threshold = 0.3 acc =  fdr = 0.33 tpr = 0.46 fpr = 0.25 shd = 6.00 nnz = 9  f1 = 0.5454545454545455
+ n= 200 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.31 tpr = 0.90 fpr = 0.27 shd = 5.00 nnz = 13  f1 = 0.7826086956521738
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 1.00 tpr = 0.00 fpr = 0.45 shd = 10.00 nnz = 9  f1 = 0.0
+P1_est: threshold = 0.3 acc =  fdr = 0.47 tpr = 0.90 fpr = 0.53 shd = 8.00 nnz = 17  f1 = 0.6666666666666667
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.67 tpr = 0.40 fpr = 0.20 shd = 4.00 nnz = 6  f1 = 0.3636363636363636
+P1_est: threshold = 0.3 acc =  fdr = 0.80 tpr = 0.10 fpr = 0.27 shd = 11.00 nnz = 5  f1 = 0.13333333333333333
+ n= 200 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.62 tpr = 0.83 fpr = 0.42 shd = 8.00 nnz = 13  f1 = 0.5263157894736842
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.62 tpr = 0.60 fpr = 0.25 shd = 6.00 nnz = 8  f1 = 0.4615384615384615
+P1_est: threshold = 0.3 acc =  fdr = 0.50 tpr = 1.00 fpr = 0.32 shd = 5.00 nnz = 12  f1 = 0.6666666666666666
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.50 tpr = 0.60 fpr = 0.15 shd = 4.00 nnz = 6  f1 = 0.5454545454545454
+P1_est: threshold = 0.3 acc =  fdr = 0.64 tpr = 0.67 fpr = 0.37 shd = 7.00 nnz = 11  f1 = 0.4705882352941177
+ n= 200 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.44 tpr = 0.82 fpr = 0.50 shd = 7.00 nnz = 16  f1 = 0.6666666666666666
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.56 tpr = 0.80 fpr = 0.25 shd = 5.00 nnz = 9  f1 = 0.5714285714285714
+P1_est: threshold = 0.3 acc =  fdr = 0.44 tpr = 0.82 fpr = 0.50 shd = 7.00 nnz = 16  f1 = 0.6666666666666666
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.40 tpr = 0.60 fpr = 0.10 shd = 3.00 nnz = 5  f1 = 0.6
+P1_est: threshold = 0.3 acc =  fdr = 0.50 tpr = 0.55 fpr = 0.43 shd = 8.00 nnz = 12  f1 = 0.5217391304347826
+ n= 200 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.36 tpr = 1.00 fpr = 0.22 shd = 3.00 nnz = 11  f1 = 0.7777777777777778
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.70 tpr = 0.60 fpr = 0.35 shd = 7.00 nnz = 10  f1 = 0.4
+P1_est: threshold = 0.3 acc =  fdr = 0.63 tpr = 1.00 fpr = 0.67 shd = 10.00 nnz = 19  f1 = 0.5384615384615384
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.83 tpr = 0.20 fpr = 0.25 shd = 8.00 nnz = 6  f1 = 0.1818181818181818
+P1_est: threshold = 0.3 acc =  fdr = 0.67 tpr = 0.71 fpr = 0.56 shd = 8.00 nnz = 15  f1 = 0.4545454545454545
+
+mean and var for each model with  n = 200 d = 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.0 w_fdr var = 0.0 | w_tpr mean = 1.0 w_tpr var = 0.0 | w_fpr mean = 0.0 w_fpr var = 0.0 | w_f1 mean = 1.0 w_f1 var = 0.0 | w_shd mean = 0.0 w_shd var = 0.0
+
+notears + lasso:  w_fdr mean = 0.7161111111111111 w_fdr var = 0.023038271604938272 | w_tpr mean = 0.52 w_tpr var = 0.07360000000000003 | w_fpr mean = 0.32999999999999996 w_fpr var = 0.0056 | w_f1 mean = 0.3665934065934066 w_f1 var = 0.037518946987078854 | w_shd mean = 7.0 w_shd var = 2.8
+
+dynotears:  w_fdr mean = 0.605 w_fdr var = 0.02187777777777778 | w_tpr mean = 0.4800000000000001 w_tpr var = 0.02559999999999999 | w_fpr mean = 0.19 w_fpr var = 0.0034000000000000002 | w_f1 mean = 0.43048951048951045 w_f1 var = 0.021844315125434006 | w_shd mean = 5.0 w_shd var = 3.2
+
+model_1 p1_fdr mean = 0.39484265734265733 p1_fdr var = 0.01600136314734217 | p1_tpr mean = 0.8487645687645688 p1_tpr var = 0.01022988138512614 | p1_fpr mean = 0.3319883040935673 p1_fpr var = 0.01183959508908724 | p1_f1 mean = 0.6946737859140604 p1_f1 var = 0.008881810525643453 | p1_shd mean = 5.6 p1_shd var = 3.04
+
+notears + lasso p1_fdr mean = 0.4746001031991744 p1_fdr var = 0.009327265056802144 | p1_tpr mean = 0.8974825174825176 p1_tpr var = 0.008752623600176044 | p1_fpr mean = 0.48649122807017536 p1_fpr var = 0.013770883348722682 | p1_f1 mean = 0.6505494505494505 p1_f1 var = 0.0034810610634786444 | p1_shd mean = 7.4 p1_shd var = 2.6399999999999997
+
+dynotears p1_fdr mean = 0.5872727272727272 p1_fdr var = 0.02521359044995409 | p1_tpr mean = 0.4975890775890776 p1_tpr var = 0.047442497606733365 | p1_fpr mean = 0.373842940685046 p1_fpr var = 0.012573581265890987 | p1_f1 mean = 0.42513213981244674 p1_f1 var = 0.022377667019852537 | p1_shd mean = 8.0 p1_shd var = 2.8
+
+ n= 200 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.33 tpr = 0.67 fpr = 0.03 shd = 6.00 nnz = 9  f1 = 0.6666666666666666
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.47 tpr = 0.80 fpr = 0.08 shd = 9.00 nnz = 15  f1 = 0.64
+P1_est: threshold = 0.3 acc =  fdr = 0.54 tpr = 0.67 fpr = 0.08 shd = 9.00 nnz = 13  f1 = 0.5454545454545455
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.20 tpr = 0.80 fpr = 0.02 shd = 2.00 nnz = 10  f1 = 0.8000000000000002
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.00 fpr = 0.00 shd = 9.00 nnz = 0  f1 = 0.0
+ n= 200 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.62 fpr = 0.00 shd = 5.00 nnz = 8  f1 = 0.761904761904762
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.73 tpr = 0.70 fpr = 0.21 shd = 19.00 nnz = 26  f1 = 0.3888888888888889
+P1_est: threshold = 0.3 acc =  fdr = 0.61 tpr = 0.54 fpr = 0.13 shd = 15.00 nnz = 18  f1 = 0.45161290322580644
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.36 tpr = 0.90 fpr = 0.06 shd = 5.00 nnz = 14  f1 = 0.75
+P1_est: threshold = 0.3 acc =  fdr = 0.50 tpr = 0.31 fpr = 0.05 shd = 13.00 nnz = 8  f1 = 0.380952380952381
+ n= 200 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.18 tpr = 0.90 fpr = 0.02 shd = 3.00 nnz = 11  f1 = 0.8571428571428572
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.59 tpr = 0.90 fpr = 0.14 shd = 13.00 nnz = 22  f1 = 0.5625000000000001
+P1_est: threshold = 0.3 acc =  fdr = 0.61 tpr = 0.90 fpr = 0.16 shd = 15.00 nnz = 23  f1 = 0.5454545454545454
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.23 tpr = 1.00 fpr = 0.03 shd = 3.00 nnz = 13  f1 = 0.8695652173913044
+P1_est: threshold = 0.3 acc =  fdr = 0.73 tpr = 0.30 fpr = 0.09 shd = 13.00 nnz = 11  f1 = 0.28571428571428564
+ n= 200 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.38 tpr = 0.56 fpr = 0.03 shd = 7.00 nnz = 8  f1 = 0.5882352941176471
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.80 tpr = 0.40 fpr = 0.18 shd = 16.00 nnz = 20  f1 = 0.26666666666666666
+P1_est: threshold = 0.3 acc =  fdr = 0.61 tpr = 0.78 fpr = 0.12 shd = 13.00 nnz = 18  f1 = 0.5185185185185185
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.54 tpr = 0.60 fpr = 0.08 shd = 7.00 nnz = 13  f1 = 0.5217391304347826
+P1_est: threshold = 0.3 acc =  fdr = 0.86 tpr = 0.11 fpr = 0.07 shd = 11.00 nnz = 7  f1 = 0.125
+ n= 200 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.56 tpr = 0.64 fpr = 0.10 shd = 13.00 nnz = 16  f1 = 0.5185185185185185
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.83 tpr = 0.40 fpr = 0.21 shd = 23.00 nnz = 23  f1 = 0.24242424242424243
+P1_est: threshold = 0.3 acc =  fdr = 0.65 tpr = 0.64 fpr = 0.15 shd = 16.00 nnz = 20  f1 = 0.45161290322580644
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.25 tpr = 0.90 fpr = 0.03 shd = 3.00 nnz = 12  f1 = 0.8181818181818182
+P1_est: threshold = 0.3 acc =  fdr = 0.69 tpr = 0.36 fpr = 0.10 shd = 16.00 nnz = 13  f1 = 0.33333333333333337
+
+mean and var for each model with  n = 200 d = 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.0 w_fdr var = 0.0 | w_tpr mean = 1.0 w_tpr var = 0.0 | w_fpr mean = 0.0 w_fpr var = 0.0 | w_f1 mean = 1.0 w_f1 var = 0.0 | w_shd mean = 0.0 w_shd var = 0.0
+
+notears + lasso:  w_fdr mean = 0.6828863889733455 w_fdr var = 0.01834511172918248 | w_tpr mean = 0.6399999999999999 w_tpr var = 0.04239999999999999 | w_fpr mean = 0.16444444444444445 w_fpr var = 0.002488888888888889 | w_f1 mean = 0.4200959595959596 w_f1 var = 0.024943673196612597 | w_shd mean = 16.0 w_shd var = 23.2
+
+dynotears:  w_fdr mean = 0.31527472527472533 w_fdr var = 0.015251104939017024 | w_tpr mean = 0.8400000000000001 w_tpr var = 0.018400000000000003 | w_fpr mean = 0.04444444444444444 w_fpr var = 0.00039506172839506176 | w_f1 mean = 0.7518972332015811 w_f1 var = 0.014705925729194342 | w_shd mean = 4.0 w_shd var = 3.2
+
+model_1 p1_fdr mean = 0.290530303030303 p1_fdr var = 0.0358321854912764 | p1_tpr mean = 0.6747940947940948 p1_tpr var = 0.014001594089239778 | p1_fpr mean = 0.037855976732381225 p1_fpr var = 0.0011456168763927198 | p1_f1 mean = 0.6784936196700903 p1_f1 var = 0.01455028876716507 | p1_shd mean = 6.8 p1_shd var = 11.360000000000001
+
+notears + lasso p1_fdr mean = 0.6038758825715347 p1_fdr var = 0.001306879573391135 | p1_tpr mean = 0.7038539238539239 p1_tpr var = 0.015446098302974765 | p1_fpr mean = 0.1251723901394572 p1_fpr var = 0.0007415531815456768 | p1_f1 mean = 0.5025306831758445 p1_f1 var = 0.0018251534829734455 | p1_shd mean = 13.6 p1_shd var = 6.24
+
+dynotears p1_fdr mean = 0.5553446553446554 p1_fdr var = 0.09017420142295268 | p1_tpr mean = 0.21648795648795655 p1_tpr var = 0.01898329273247688 | p1_fpr mean = 0.06038471236456513 p1_fpr var = 0.0012713670671338326 | p1_f1 mean = 0.225 p1_f1 var = 0.02007369614512472 | p1_shd mean = 12.4 p1_shd var = 5.4399999999999995
+
+ n= 200 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.10 tpr = 0.95 fpr = 0.01 shd = 2.00 nnz = 21  f1 = 0.9268292682926829
+P1_est: threshold = 0.3 acc =  fdr = 0.07 tpr = 0.71 fpr = 0.01 shd = 11.00 nnz = 27  f1 = 0.8064516129032259
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.81 tpr = 0.50 fpr = 0.12 shd = 49.00 nnz = 54  f1 = 0.2702702702702703
+P1_est: threshold = 0.3 acc =  fdr = 0.57 tpr = 0.83 fpr = 0.11 shd = 43.00 nnz = 68  f1 = 0.5631067961165049
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.48 tpr = 0.85 fpr = 0.04 shd = 16.00 nnz = 33  f1 = 0.6415094339622641
+P1_est: threshold = 0.3 acc =  fdr = 0.71 tpr = 0.11 fpr = 0.03 shd = 37.00 nnz = 14  f1 = 0.16326530612244897
+ n= 200 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.05 tpr = 0.95 fpr = 0.00 shd = 1.00 nnz = 20  f1 = 0.9500000000000001
+P1_est: threshold = 0.3 acc =  fdr = 0.08 tpr = 0.80 fpr = 0.01 shd = 10.00 nnz = 38  f1 = 0.8536585365853658
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.76 tpr = 0.70 fpr = 0.12 shd = 46.00 nnz = 58  f1 = 0.358974358974359
+P1_est: threshold = 0.3 acc =  fdr = 0.50 tpr = 0.80 fpr = 0.10 shd = 38.00 nnz = 70  f1 = 0.6140350877192983
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.38 tpr = 0.90 fpr = 0.03 shd = 11.00 nnz = 29  f1 = 0.7346938775510204
+P1_est: threshold = 0.3 acc =  fdr = 0.40 tpr = 0.07 fpr = 0.01 shd = 39.00 nnz = 5  f1 = 0.1224489795918367
+ n= 200 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.10 tpr = 0.90 fpr = 0.01 shd = 3.00 nnz = 20  f1 = 0.9
+P1_est: threshold = 0.3 acc =  fdr = 0.17 tpr = 0.68 fpr = 0.01 shd = 17.00 nnz = 30  f1 = 0.746268656716418
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.78 tpr = 0.60 fpr = 0.11 shd = 50.00 nnz = 55  f1 = 0.32
+P1_est: threshold = 0.3 acc =  fdr = 0.60 tpr = 0.73 fpr = 0.11 shd = 45.00 nnz = 67  f1 = 0.5192307692307693
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.50 tpr = 0.80 fpr = 0.04 shd = 18.00 nnz = 32  f1 = 0.6153846153846154
+P1_est: threshold = 0.3 acc =  fdr = 0.57 tpr = 0.08 fpr = 0.01 shd = 36.00 nnz = 7  f1 = 0.13636363636363638
+ n= 200 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 20  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.81 fpr = 0.00 shd = 7.00 nnz = 30  f1 = 0.8955223880597014
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.84 tpr = 0.60 fpr = 0.16 shd = 64.00 nnz = 74  f1 = 0.25531914893617025
+P1_est: threshold = 0.3 acc =  fdr = 0.57 tpr = 0.81 fpr = 0.11 shd = 46.00 nnz = 70  f1 = 0.5607476635514019
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.57 tpr = 0.80 fpr = 0.06 shd = 22.00 nnz = 37  f1 = 0.5614035087719298
+P1_est: threshold = 0.3 acc =  fdr = 0.75 tpr = 0.08 fpr = 0.02 shd = 41.00 nnz = 12  f1 = 0.12244897959183675
+ n= 200 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 20  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.08 tpr = 0.68 fpr = 0.01 shd = 12.00 nnz = 25  f1 = 0.7796610169491526
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.68 tpr = 0.80 fpr = 0.09 shd = 35.00 nnz = 50  f1 = 0.45714285714285713
+P1_est: threshold = 0.3 acc =  fdr = 0.67 tpr = 0.74 fpr = 0.14 shd = 54.00 nnz = 75  f1 = 0.45871559633027525
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.17 tpr = 0.95 fpr = 0.01 shd = 4.00 nnz = 23  f1 = 0.8837209302325583
+P1_est: threshold = 0.3 acc =  fdr = 1.00 tpr = 0.00 fpr = 0.01 shd = 35.00 nnz = 2  f1 = 0.0
+
+mean and var for each model with  n = 200 d = 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.04904761904761905 w_fdr var = 0.001908390022675737 | w_tpr mean = 0.96 w_tpr var = 0.0013999999999999998 | w_fpr mean = 0.002631578947368421 w_fpr var = 5.540166204986149e-06 | w_f1 mean = 0.9553658536585367 w_f1 var = 0.0015785841760856633 | w_shd mean = 1.2 w_shd var = 1.36
+
+notears + lasso:  w_fdr mean = 0.7746183048252013 w_fdr var = 0.0029745708595036056 | w_tpr mean = 0.64 w_tpr var = 0.010400000000000003 | w_fpr mean = 0.11947368421052632 w_fpr var = 0.0005750692520775624 | w_f1 mean = 0.33234132706473135 w_f1 var = 0.0052444561335016505 | w_shd mean = 48.8 w_shd var = 86.16
+
+dynotears:  w_fdr mean = 0.4211278881443799 w_fdr var = 0.01891791810696078 | w_tpr mean = 0.86 w_tpr var = 0.003399999999999996 | w_fpr mean = 0.035789473684210524 w_fpr var = 0.00022880886426592797 | w_f1 mean = 0.6873424731804776 w_f1 var = 0.012789175485772769 | w_shd mean = 14.2 w_shd var = 38.56
+
+model_1 p1_fdr mean = 0.07993762183235867 p1_fdr var = 0.0027894632574505356 | p1_tpr mean = 0.7345394668924081 p1_tpr var = 0.003355023955781096 | p1_fpr mean = 0.006629000780888376 p1_fpr var = 2.018128199877628e-05 | p1_f1 mean = 0.8163124422427727 p1_f1 var = 0.002803128220229223 | p1_shd mean = 11.4 p1_shd var = 10.64
+
+notears + lasso p1_fdr mean = 0.5817279150466156 p1_fdr var = 0.0028602056488777317 | p1_tpr mean = 0.7799721264427147 p1_tpr var = 0.0016146089633641274 | p1_fpr mean = 0.11243232371982384 p1_fpr var = 0.00016503366353889517 | p1_f1 mean = 0.5431671825896499 p1_f1 var = 0.0026867887564247005 | p1_shd mean = 45.2 p1_shd var = 26.96
+
+dynotears p1_fdr mean = 0.6871428571428572 p1_fdr var = 0.039681632653061225 | p1_tpr mean = 0.06892593892593893 p1_tpr var = 0.001420868590963361 | p1_fpr mean = 0.014858478170537596 p1_fpr var = 8.885938992913443e-05 | p1_f1 mean = 0.10890538033395177 p1_f1 var = 0.003187239476664337 | p1_shd mean = 37.6 p1_shd var = 4.64
+
+ n= 300 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.10 tpr = 0.82 fpr = 0.07 shd = 2.00 nnz = 10  f1 = 0.8571428571428572
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.78 tpr = 0.40 fpr = 0.35 shd = 8.00 nnz = 9  f1 = 0.2857142857142857
+P1_est: threshold = 0.3 acc =  fdr = 0.44 tpr = 0.82 fpr = 0.50 shd = 8.00 nnz = 16  f1 = 0.6666666666666666
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.60 tpr = 0.40 fpr = 0.15 shd = 4.00 nnz = 5  f1 = 0.4000000000000001
+P1_est: threshold = 0.3 acc =  fdr = 0.55 tpr = 0.45 fpr = 0.43 shd = 9.00 nnz = 11  f1 = 0.45454545454545453
+ n= 300 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.27 tpr = 0.73 fpr = 0.21 shd = 5.00 nnz = 11  f1 = 0.7272727272727273
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.62 tpr = 0.60 fpr = 0.25 shd = 6.00 nnz = 8  f1 = 0.4615384615384615
+P1_est: threshold = 0.3 acc =  fdr = 0.15 tpr = 1.00 fpr = 0.14 shd = 2.00 nnz = 13  f1 = 0.9166666666666666
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.50 tpr = 0.60 fpr = 0.15 shd = 4.00 nnz = 6  f1 = 0.5454545454545454
+P1_est: threshold = 0.3 acc =  fdr = 0.80 tpr = 0.09 fpr = 0.29 shd = 11.00 nnz = 5  f1 = 0.12500000000000003
+ n= 300 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.10 tpr = 0.90 fpr = 0.07 shd = 1.00 nnz = 10  f1 = 0.9
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.57 tpr = 0.60 fpr = 0.20 shd = 5.00 nnz = 7  f1 = 0.5
+P1_est: threshold = 0.3 acc =  fdr = 0.25 tpr = 0.90 fpr = 0.20 shd = 3.00 nnz = 12  f1 = 0.8181818181818182
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.20 tpr = 0.80 fpr = 0.05 shd = 1.00 nnz = 5  f1 = 0.8000000000000002
+P1_est: threshold = 0.3 acc =  fdr = 0.56 tpr = 0.40 fpr = 0.33 shd = 9.00 nnz = 9  f1 = 0.4210526315789474
+ n= 300 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.50 tpr = 0.71 fpr = 0.28 shd = 6.00 nnz = 10  f1 = 0.588235294117647
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.38 tpr = 1.00 fpr = 0.15 shd = 3.00 nnz = 8  f1 = 0.7692307692307693
+P1_est: threshold = 0.3 acc =  fdr = 0.64 tpr = 0.71 fpr = 0.50 shd = 7.00 nnz = 14  f1 = 0.4761904761904762
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.25 tpr = 0.43 fpr = 0.06 shd = 5.00 nnz = 4  f1 = 0.5454545454545454
+ n= 300 d= 5 s0= 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 5  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.43 tpr = 0.89 fpr = 0.38 shd = 6.00 nnz = 14  f1 = 0.6956521739130435
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.29 tpr = 1.00 fpr = 0.10 shd = 2.00 nnz = 7  f1 = 0.8333333333333333
+P1_est: threshold = 0.3 acc =  fdr = 0.56 tpr = 0.89 fpr = 0.62 shd = 8.00 nnz = 18  f1 = 0.5925925925925926
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.29 tpr = 1.00 fpr = 0.10 shd = 2.00 nnz = 7  f1 = 0.8333333333333333
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.56 fpr = 0.00 shd = 2.00 nnz = 5  f1 = 0.7142857142857143
+
+mean and var for each model with  n = 300 d = 5 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.0 w_fdr var = 0.0 | w_tpr mean = 1.0 w_tpr var = 0.0 | w_fpr mean = 0.0 w_fpr var = 0.0 | w_f1 mean = 1.0 w_f1 var = 0.0 | w_shd mean = 0.0 w_shd var = 0.0
+
+notears + lasso:  w_fdr mean = 0.5269841269841269 w_fdr var = 0.031158037288989672 | w_tpr mean = 0.72 w_tpr var = 0.0576 | w_fpr mean = 0.21000000000000002 w_fpr var = 0.007399999999999999 | w_f1 mean = 0.5699633699633699 w_f1 var = 0.04130392196326262 | w_shd mean = 4.8 w_shd var = 4.5600000000000005
+
+dynotears:  w_fdr mean = 0.31714285714285717 w_fdr var = 0.045746938775510206 | w_tpr mean = 0.76 w_tpr var = 0.05439999999999999 | w_fpr mean = 0.09 w_fpr var = 0.0033999999999999994 | w_f1 mean = 0.7157575757575758 w_f1 var = 0.04608411386593204 | w_shd mean = 2.2 w_shd var = 2.56
+
+model_1 p1_fdr mean = 0.28025974025974026 p1_fdr var = 0.02706520492494518 | p1_tpr mean = 0.8097258297258296 p1_tpr var = 0.006079009846975214 | p1_fpr mean = 0.20103174603174603 p1_fpr var = 0.014236306374401611 | p1_f1 mean = 0.7536606104892549 p1_f1 var = 0.012710125337233319 | p1_shd mean = 4.0 p1_shd var = 4.4
+
+notears + lasso p1_fdr mean = 0.40795177045177045 p1_fdr var = 0.03347178708213507 | p1_tpr mean = 0.8642712842712843 p1_tpr var = 0.008984952389281393 | p1_fpr mean = 0.39357142857142857 p1_fpr var = 0.03530816326530613 | p1_f1 mean = 0.694059644059644 p1_f1 var = 0.024694622534930374 | p1_shd mean = 5.6 p1_shd var = 6.640000000000001
+
+dynotears p1_fdr mean = 0.4302020202020202 p1_fdr var = 0.07665874910723396 | p1_tpr mean = 0.3859163059163059 p1_tpr var = 0.024506900378761846 | p1_fpr mean = 0.2206349206349206 p1_fpr var = 0.027220962459057696 | p1_f1 mean = 0.45206766917293234 p1_f1 var = 0.037084148807985905 | p1_shd mean = 7.2 p1_shd var = 10.559999999999999
+
+ n= 300 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.12 tpr = 0.78 fpr = 0.01 shd = 3.00 nnz = 8  f1 = 0.823529411764706
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.73 tpr = 0.80 fpr = 0.24 shd = 23.00 nnz = 30  f1 = 0.4
+P1_est: threshold = 0.3 acc =  fdr = 0.59 tpr = 0.78 fpr = 0.11 shd = 11.00 nnz = 17  f1 = 0.5384615384615384
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.41 tpr = 1.00 fpr = 0.08 shd = 7.00 nnz = 17  f1 = 0.7407407407407407
+P1_est: threshold = 0.3 acc =  fdr = 0.67 tpr = 0.56 fpr = 0.11 shd = 13.00 nnz = 15  f1 = 0.4166666666666667
+ n= 300 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.73 fpr = 0.00 shd = 2.00 nnz = 11  f1 = 0.846153846153846
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.62 tpr = 0.90 fpr = 0.17 shd = 15.00 nnz = 24  f1 = 0.5294117647058825
+P1_est: threshold = 0.3 acc =  fdr = 0.48 tpr = 0.80 fpr = 0.13 shd = 12.00 nnz = 23  f1 = 0.6315789473684211
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.23 tpr = 1.00 fpr = 0.03 shd = 3.00 nnz = 13  f1 = 0.8695652173913044
+P1_est: threshold = 0.3 acc =  fdr = 0.64 tpr = 0.27 fpr = 0.08 shd = 17.00 nnz = 11  f1 = 0.30769230769230765
+ n= 300 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.25 tpr = 0.90 fpr = 0.03 shd = 3.00 nnz = 12  f1 = 0.8181818181818182
+P1_est: threshold = 0.3 acc =  fdr = 0.29 tpr = 0.83 fpr = 0.05 shd = 6.00 nnz = 14  f1 = 0.7692307692307692
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.36 tpr = 0.90 fpr = 0.06 shd = 5.00 nnz = 14  f1 = 0.75
+P1_est: threshold = 0.3 acc =  fdr = 0.60 tpr = 0.83 fpr = 0.17 shd = 15.00 nnz = 25  f1 = 0.5405405405405406
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.25 tpr = 0.90 fpr = 0.03 shd = 3.00 nnz = 12  f1 = 0.8181818181818182
+P1_est: threshold = 0.3 acc =  fdr = 0.67 tpr = 0.08 fpr = 0.02 shd = 13.00 nnz = 3  f1 = 0.13333333333333333
+ n= 300 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.31 tpr = 0.82 fpr = 0.04 shd = 5.00 nnz = 13  f1 = 0.7500000000000001
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.78 tpr = 0.40 fpr = 0.16 shd = 18.00 nnz = 18  f1 = 0.2857142857142857
+P1_est: threshold = 0.3 acc =  fdr = 0.63 tpr = 0.91 fpr = 0.19 shd = 15.00 nnz = 27  f1 = 0.5263157894736842
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.50 tpr = 0.70 fpr = 0.08 shd = 9.00 nnz = 14  f1 = 0.5833333333333334
+P1_est: threshold = 0.3 acc =  fdr = 1.00 tpr = 0.00 fpr = 0.01 shd = 10.00 nnz = 1  f1 = 0.0
+ n= 300 d= 10 s0= 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 10  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.10 tpr = 0.69 fpr = 0.01 shd = 5.00 nnz = 10  f1 = 0.7826086956521738
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.79 tpr = 0.80 fpr = 0.33 shd = 31.00 nnz = 38  f1 = 0.3333333333333333
+P1_est: threshold = 0.3 acc =  fdr = 0.41 tpr = 0.77 fpr = 0.08 shd = 10.00 nnz = 17  f1 = 0.6666666666666667
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.36 tpr = 0.90 fpr = 0.06 shd = 5.00 nnz = 14  f1 = 0.75
+P1_est: threshold = 0.3 acc =  fdr = 0.60 tpr = 0.46 fpr = 0.10 shd = 15.00 nnz = 15  f1 = 0.42857142857142855
+
+mean and var for each model with  n = 300 d = 10 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.05 w_fdr var = 0.010000000000000004 | w_tpr mean = 0.9800000000000001 w_tpr var = 0.0015999999999999994 | w_fpr mean = 0.006666666666666666 w_fpr var = 0.00017777777777777773 | w_f1 mean = 0.9636363636363636 w_f1 var = 0.0052892561983471035 | w_shd mean = 0.6 w_shd var = 1.44
+
+notears + lasso:  w_fdr mean = 0.6565455304928989 w_fdr var = 0.025780119960162173 | w_tpr mean = 0.76 w_tpr var = 0.0344 | w_fpr mean = 0.1911111111111111 w_fpr var = 0.008661728395061727 | w_f1 mean = 0.45969187675070033 w_f1 var = 0.027787494605685414 | w_shd mean = 18.4 w_shd var = 74.24000000000001
+
+dynotears:  w_fdr mean = 0.34993535875888815 w_fdr var = 0.0101163709479615 | w_tpr mean = 0.9 w_tpr var = 0.012000000000000004 | w_fpr mean = 0.05555555555555556 w_fpr var = 0.0003950617283950618 | w_f1 mean = 0.7523642219294394 w_f1 var = 0.009356033094711627 | w_shd mean = 5.4 w_shd var = 5.4399999999999995
+
+model_1 p1_fdr mean = 0.1636813186813187 p1_fdr var = 0.013594867769593042 | p1_tpr mean = 0.770986790986791 p1_tpr var = 0.0027537525756640008 | p1_fpr mean = 0.022576325908367754 p1_fpr var = 0.0003580972865810088 | p1_f1 mean = 0.794304544560299 p1_f1 var = 0.0012541645397013525 | p1_shd mean = 4.2 p1_shd var = 2.16
+
+notears + lasso p1_fdr mean = 0.5415780998389694 p1_fdr var = 0.006840734598986856 | p1_tpr mean = 0.817886557886558 p1_tpr var = 0.0025705731029740334 | p1_fpr mean = 0.1362454852241073 p1_fpr var = 0.0016045797620664309 | p1_f1 mean = 0.5807126965021702 p1_f1 var = 0.0032666892857746445 | p1_shd mean = 12.6 p1_shd var = 4.24
+
+dynotears p1_fdr mean = 0.713939393939394 p1_fdr var = 0.021060055096418735 | p1_tpr mean = 0.2734188034188034 p1_tpr var = 0.04518521440572723 | p1_fpr mean = 0.06593091094242039 p1_fpr var = 0.0016935478948135712 | p1_f1 mean = 0.2572527472527472 p1_f1 var = 0.027768406928846488 | p1_shd mean = 13.6 p1_shd var = 5.4399999999999995
+
+ n= 300 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 20  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.04 tpr = 0.79 fpr = 0.00 shd = 7.00 nnz = 28  f1 = 0.8709677419354839
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.82 tpr = 0.85 fpr = 0.20 shd = 77.00 nnz = 93  f1 = 0.3008849557522124
+P1_est: threshold = 0.3 acc =  fdr = 0.69 tpr = 0.79 fpr = 0.16 shd = 62.00 nnz = 87  f1 = 0.44628099173553715
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.74 tpr = 0.60 fpr = 0.09 shd = 38.00 nnz = 46  f1 = 0.36363636363636365
+P1_est: threshold = 0.3 acc =  fdr = 0.82 tpr = 0.12 fpr = 0.05 shd = 43.00 nnz = 22  f1 = 0.14285714285714285
+ n= 300 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.17 tpr = 0.95 fpr = 0.01 shd = 4.00 nnz = 23  f1 = 0.8837209302325583
+P1_est: threshold = 0.3 acc =  fdr = 0.07 tpr = 0.78 fpr = 0.01 shd = 10.00 nnz = 30  f1 = 0.8484848484848485
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.84 tpr = 0.55 fpr = 0.15 shd = 61.00 nnz = 67  f1 = 0.2528735632183908
+P1_est: threshold = 0.3 acc =  fdr = 0.58 tpr = 0.75 fpr = 0.10 shd = 46.00 nnz = 65  f1 = 0.5346534653465346
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.47 tpr = 0.95 fpr = 0.04 shd = 17.00 nnz = 36  f1 = 0.6785714285714285
+P1_est: threshold = 0.3 acc =  fdr = 0.75 tpr = 0.08 fpr = 0.02 shd = 41.00 nnz = 12  f1 = 0.125
+ n= 300 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 20  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.68 fpr = 0.00 shd = 11.00 nnz = 26  f1 = 0.8125000000000001
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.78 tpr = 0.55 fpr = 0.10 shd = 41.00 nnz = 50  f1 = 0.3142857142857143
+P1_est: threshold = 0.3 acc =  fdr = 0.47 tpr = 0.76 fpr = 0.07 shd = 33.00 nnz = 55  f1 = 0.6236559139784946
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.34 tpr = 0.95 fpr = 0.03 shd = 10.00 nnz = 29  f1 = 0.7755102040816326
+P1_est: threshold = 0.3 acc =  fdr = 0.54 tpr = 0.16 fpr = 0.02 shd = 35.00 nnz = 13  f1 = 0.23529411764705882
+ n= 300 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.00 tpr = 1.00 fpr = 0.00 shd = 0.00 nnz = 20  f1 = 1.0
+P1_est: threshold = 0.3 acc =  fdr = 0.00 tpr = 0.60 fpr = 0.00 shd = 16.00 nnz = 26  f1 = 0.7536231884057971
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.83 tpr = 0.40 fpr = 0.10 shd = 46.00 nnz = 47  f1 = 0.23880597014925373
+P1_est: threshold = 0.3 acc =  fdr = 0.62 tpr = 0.56 fpr = 0.11 shd = 52.00 nnz = 63  f1 = 0.45283018867924524
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.47 tpr = 0.85 fpr = 0.04 shd = 15.00 nnz = 32  f1 = 0.6538461538461537
+P1_est: threshold = 0.3 acc =  fdr = 0.82 tpr = 0.05 fpr = 0.03 shd = 49.00 nnz = 11  f1 = 0.07407407407407407
+ n= 300 d= 20 s0= 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+-----model_p2-----
+W_est: threshold = 0.3 fdr = 0.10 tpr = 0.95 fpr = 0.01 shd = 2.00 nnz = 21  f1 = 0.9268292682926829
+P1_est: threshold = 0.3 acc =  fdr = 0.08 tpr = 0.92 fpr = 0.01 shd = 6.00 nnz = 38  f1 = 0.9210526315789473
+-----notears + lasso-----
+W_est: threshold = 0.3 fdr = 0.87 tpr = 0.30 fpr = 0.11 shd = 52.00 nnz = 47  f1 = 0.17910447761194026
+P1_est: threshold = 0.3 acc =  fdr = 0.49 tpr = 0.89 fpr = 0.09 shd = 35.00 nnz = 67  f1 = 0.6476190476190476
+-----dynotears-----
+W_est: threshold = 0.3 fdr = 0.68 tpr = 0.65 fpr = 0.07 shd = 32.00 nnz = 41  f1 = 0.42622950819672134
+P1_est: threshold = 0.3 acc =  fdr = 0.89 tpr = 0.03 fpr = 0.02 shd = 43.00 nnz = 9  f1 = 0.0425531914893617
+
+mean and var for each model with  n = 300 d = 20 w_graph_type = ER p_graph_type = ER sem_type = exp
+
+model_1:  w_fdr mean = 0.05383022774327122 w_fdr var = 0.004965514876397943 | w_tpr mean = 0.9800000000000001 w_tpr var = 0.000600000000000001 | w_fpr mean = 0.003157894736842105 w_fpr var = 1.7728531855955677e-05 | w_f1 mean = 0.9621100397050484 w_f1 var = 0.002339306517760132 | w_shd mean = 1.2 w_shd var = 2.5599999999999996
+
+notears + lasso:  w_fdr mean = 0.827030571234425 w_fdr var = 0.0008892564206524161 | w_tpr mean = 0.53 w_tpr var = 0.0346 | w_fpr mean = 0.13210526315789473 w_fpr var = 0.001433240997229917 | w_f1 mean = 0.2571909362035023 w_f1 var = 0.0023246245460520542 | w_shd mean = 55.4 w_shd var = 161.04
+
+dynotears:  w_fdr mean = 0.5415714144960041 w_fdr var = 0.021566264526025482 | w_tpr mean = 0.8 w_tpr var = 0.021999999999999995 | w_fpr mean = 0.05473684210526316 w_fpr var = 0.0005412742382271468 | w_f1 mean = 0.57955873166646 w_f1 var = 0.02477028691394616 | w_shd mean = 22.4 w_shd var = 114.64000000000001
+
+model_1 p1_fdr mean = 0.036265664160401 p1_fdr var = 0.0010753299288321053 | p1_tpr mean = 0.7563619491044071 p1_tpr var = 0.011445828366813597 | p1_fpr mean = 0.0033028077498687045 p1_fpr var = 1.0358251103718857e-05 | p1_f1 mean = 0.8413256820810154 p1_f1 var = 0.003161787839309385 | p1_shd mean = 10.0 p1_shd var = 12.4
+
+notears + lasso p1_fdr mean = 0.5717165524473811 p1_fdr var = 0.006476871441364921 | p1_tpr mean = 0.75203038375693 p1_tpr var = 0.011971615244429907 | p1_fpr mean = 0.10811143070369375 p1_fpr var = 0.0009470950200215838 | p1_f1 mean = 0.5410079214717718 p1_f1 var = 0.0069971011548225995 | p1_shd mean = 45.6 p1_shd var = 116.24000000000001
+
+dynotears p1_fdr mean = 0.7627428127428127 p1_fdr var = 0.014504853689002875 | p1_tpr mean = 0.08634050927592578 p1_tpr var = 0.0022596914825516587 | p1_fpr mean = 0.028110430143227682 p1_fpr var = 0.00011538331454902129 | p1_f1 mean = 0.12395570521352747 p1_f1 var = 0.004373828669112229 | p1_shd mean = 42.2 p1_shd var = 20.16
+

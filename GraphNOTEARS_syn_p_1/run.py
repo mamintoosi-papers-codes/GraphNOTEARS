@@ -44,9 +44,9 @@ def main():
     import utils as ut
     # ut.set_random_seed(123)
 
-    n_ = [20] # [100, 200, 300, 500]
+    n_ = [100, 200, 300]# [20] # [100, 200, 300, 500]
 
-    d_ = [5] #[5, 10, 20, 30]
+    d_ = [5, 10, 20]# [5] #[5, 10, 20, 30]
 
     w_graph_types = ['ER']#['ER', 'BA'] 
     p_graph_types = ['ER']#['ER', 'SBM'] 
